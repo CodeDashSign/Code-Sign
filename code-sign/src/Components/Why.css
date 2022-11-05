@@ -1,0 +1,33 @@
+.why {
+  padding-top: 140px;
+  padding-bottom: 140px;
+}
+
+.whySection > h2 {
+  text-decoration-line: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-color: #ba324f;
+  text-decoration-skip: edges;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+}
+
+.whySection > ul > li {
+  list-style-type: none;
+  font-size: 2.5vh;
+}
+
+.whySection {
+  background-color: #cce6f4;
+  border-radius: 15px;
+  box-shadow: 2px 2px 5px #175676;
+}
+
+.mainPoints {
+  color: #175676;
+}
+
+.whyTitle {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+}
