@@ -1,0 +1,12 @@
+.whySectionTitle {
+  padding-bottom: 2px;
+}
+
+.title > hr {
+  width: 20%;
+  border: none;
+  height: 5px;
+  /* Set the hr color */
+  color: #00ffea; /* old IE */
+  background-color: #00ffea; /* Modern Browsers */
+}

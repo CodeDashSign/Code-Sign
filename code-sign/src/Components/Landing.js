@@ -1,20 +1,23 @@
 import { Container, Row, Col } from "react-bootstrap";
 import Graph from "../Images/graph.png";
-import "./Why.css";
+import "./Landing.css";
 
 function Landing() {
   return (
     <Container className="why" id="why">
-      <Row>
+      <Row className="title">
         <h1 className="text-start whyTitle">
-          A Website To Fuel Your Ambitions
+          <b>A Website To Fuel Your Ambitions</b>
         </h1>
+        <hr className="titleLine" />
       </Row>
       <br />
       <Row>
         <Col sm={6} md={6} lg={6}>
           <Row className="whySection">
-            <h2 className="text-start">Increase Your Credibility</h2>
+            <h2 className="text-start whySectionTitle">
+              Increase Your Credibility
+            </h2>
             <ul>
               <li className="text-start">
                 75% of today's consumers argue that they gauge a company's{" "}
@@ -26,7 +29,9 @@ function Landing() {
           </Row>
           <br />
           <Row className="whySection">
-            <h2 className="text-start">Gain Essential Insights</h2>
+            <h2 className="text-start whySectionTitle">
+              Gain Essential Insights
+            </h2>
             <ul>
               <li className="text-start">
                 A website allows you to{" "}
@@ -40,7 +45,7 @@ function Landing() {
           </Row>
           <br />
           <Row className="whySection">
-            <h2 className="text-start">Proven Success</h2>
+            <h2 className="text-start whySectionTitle">Proven Success</h2>
             <ul>
               <li className="text-start">
                 The majority of businesses have a digitial presence due to its

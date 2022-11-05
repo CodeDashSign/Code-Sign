@@ -1,33 +1,48 @@
 .why {
   padding-top: 140px;
   padding-bottom: 140px;
+  width: 90vw;
+}
+
+.whyParent {
+  background-color: #175676;
+}
+
+body {
+  background-color: white;
 }
 
 .whySection > h2 {
-  text-decoration-line: underline;
-  text-decoration-thickness: 2px;
-  text-decoration-color: #ba324f;
-  text-decoration-skip: edges;
-  font-family: "Raleway", sans-serif;
-  font-weight: 500;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  color: white;
+}
+
+.whySection:hover {
+  box-shadow: 1px 1px 3px black;
 }
 
 .whySection > ul > li {
   list-style-type: none;
   font-size: 2.5vh;
+  color: white;
+  padding-left: 5%;
 }
 
 .whySection {
-  background-color: #cce6f4;
+  /* background-color: #175676; */
+  /* background: linear-gradient(to top right, #2692de, 10%, white); */
   border-radius: 15px;
-  box-shadow: 2px 2px 5px #175676;
+  /* box-shadow: 2px 2px 5px black; */
+  /* transition: 0.5s ease-in-out; */
 }
 
 .mainPoints {
-  color: #175676;
+  color: white;
 }
 
 .whyTitle {
   font-family: "Quicksand", sans-serif;
-  font-weight: 500;
+  color: white;
+  /* font-weight: 600; */
 }
