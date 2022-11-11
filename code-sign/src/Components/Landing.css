@@ -3,10 +3,10 @@
 }
 
 .title > hr {
-  width: 20%;
+  width: 20vw;
   border: none;
   height: 5px;
   /* Set the hr color */
-  color: #00ffea; /* old IE */
-  background-color: #00ffea; /* Modern Browsers */
+  color: #0054a1; /* old IE */
+  background-color: #0054a1; /* Modern Browsers */
 }

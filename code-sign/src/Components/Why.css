@@ -1,31 +1,41 @@
 .why {
-  padding-top: 140px;
-  padding-bottom: 140px;
   width: 90vw;
 }
 
 .whyParent {
-  background-color: #175676;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #d5dce0;
+  background-image: url("../Images/bars.png");
+  background-size: cover;
+  background-position: right bottom;
+}
+
+@media screen and (max-width: 992px) {
+  .whyParent {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #d5dce0;
+    background-image: url("../Images/bars.png");
+    background-size: cover;
+    background-position: bottom;
+  }
 }
 
 body {
-  background-color: white;
+  background-color: black;
 }
 
 .whySection > h2 {
   font-family: "Quicksand", sans-serif;
   font-weight: 400;
-  color: white;
-}
-
-.whySection:hover {
-  box-shadow: 1px 1px 3px black;
+  color: black;
 }
 
 .whySection > ul > li {
   list-style-type: none;
   font-size: 2.5vh;
-  color: white;
+  color: black;
   padding-left: 5%;
 }
 
@@ -38,11 +48,11 @@ body {
 }
 
 .mainPoints {
-  color: white;
+  color: black;
 }
 
 .whyTitle {
   font-family: "Quicksand", sans-serif;
-  color: white;
+  color: black;
   /* font-weight: 600; */
 }

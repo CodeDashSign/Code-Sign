@@ -1,5 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
-import Graph from "../Images/graph.png";
+import Graph from "../Images/graph.jpg";
 import "./Why.css";
 
 function Why() {
@@ -8,7 +8,7 @@ function Why() {
       <Container fluid className="why" id="why">
         <Row className="title">
           <h1 className="text-start whyTitle">
-            A Website To Fuel Your Ambitions
+            <b>A Website To Fuel Your Ambitions</b>
           </h1>
           <hr className="titleLine" />
         </Row>
@@ -17,7 +17,9 @@ function Why() {
         <Row>
           <Col sm={12} md={12} lg={6} xl={6} xxl={6} className="sectionBox">
             <Row className="whySection">
-              <h2 className="text-start">Increase Your Credibility</h2>
+              <h2 className="text-start">
+                <b>Increase Your Credibility</b>
+              </h2>
               <ul>
                 <li className="text-start">
                   75% of today's consumers argue that they gauge a company's{" "}
@@ -29,7 +31,9 @@ function Why() {
             </Row>
             <br />
             <Row className="whySection">
-              <h2 className="text-start">Gain Essential Insights</h2>
+              <h2 className="text-start">
+                <b>Gain Essential Insights</b>
+              </h2>
               <ul>
                 <li className="text-start">
                   A website allows you to{" "}
@@ -43,7 +47,9 @@ function Why() {
             </Row>
             <br />
             <Row className="whySection">
-              <h2 className="text-start">Proven Success</h2>
+              <h2 className="text-start">
+                <b>Proven Success</b>
+              </h2>
               <ul>
                 <li className="text-start">
                   The majority of businesses have a digitial presence due to its
@@ -57,8 +63,20 @@ function Why() {
               </ul>
             </Row>
           </Col>
-          <Col sm={6} md={6} lg={6}>
-            {/* <img src={Graph} alt="" /> */}
+          <Col
+            lg={6}
+            style={{
+              display: "flex",
+              alignItems: "center",
+            }}
+            className="d-none d-lg-block hidden-lg-down m-auto"
+          >
+            <img
+              src={Graph}
+              alt=""
+              style={{ borderRadius: "30px" }}
+              className="d-none d-lg-block mx-auto img-fluid"
+            />
           </Col>
         </Row>
       </Container>

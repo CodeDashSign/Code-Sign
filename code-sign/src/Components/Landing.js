@@ -59,9 +59,7 @@ function Landing() {
             </ul>
           </Row>
         </Col>
-        <Col sm={6} md={6} lg={6}>
-          <img src={Graph} alt="" />
-        </Col>
+        <Col sm={6} md={6} lg={6}></Col>
       </Row>
     </Container>
   );
