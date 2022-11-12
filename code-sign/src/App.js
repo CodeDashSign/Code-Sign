@@ -1,7 +1,8 @@
 import "./App.css";
 import Why from "./Components/Why";
 import Landing from "./Components/Landing";
-import Experience from "./Components/Experience";
+import Team from "./Components/Team";
+import Mission from "./Components/Mission";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -16,11 +17,11 @@ function App() {
               <>
                 <Landing />
                 <Why />
-                <Landing />
+                <Mission />
               </>
             }
           />
-          <Route exact path="/experience" element={<Experience />} />
+          <Route exact path="/experience" element={<Team />} />
           <Route exact path="/contact" element={<Landing />} />
         </Routes>
       </div>

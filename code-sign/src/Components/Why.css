@@ -9,6 +9,7 @@
   background-image: url("../Images/bars.png");
   background-size: cover;
   background-position: right bottom;
+  background-repeat: no-repeat;
 }
 
 @media screen and (max-width: 992px) {
