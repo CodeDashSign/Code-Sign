@@ -2,6 +2,8 @@ import "./Team.css";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import Graph from "../Images/profile.png";
 import Nishant from "../Images/Team/nishant.jpg"
+import Div from "../Images/Team/div.jpg"
+import Anish from "../Images/Team/anish.jpg"
 
 function Team() {
   return (
@@ -16,7 +18,7 @@ function Team() {
         <Row className="row1">
           <Col sm={12} md={6} lg={3} xl={3} xxl={3} className="sectionBox">
             <div class="pfp">
-              <img src={Graph} alt="" className="profileImg" />
+              <img src={Div} alt="" className="profileImg" />
             </div>
             <h4>Divyansh Goyal</h4>
             <h6>Full-Stack Developer , Graphic Designer</h6>
@@ -40,7 +42,7 @@ function Team() {
           </Col>
           <Col sm={12} md={6} lg={3} xl={3} xxl={3} className="sectionBox">
             <div class="pfp">
-              <img src={Graph} alt="" className="profileImg" />
+              <img src={Anish} alt="" className="profileImg" />
             </div>
             <h4>Anish Singla</h4>
             <h6>Full-Stack Developer</h6>
