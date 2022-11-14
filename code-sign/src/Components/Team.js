@@ -1,6 +1,7 @@
 import "./Team.css";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import Graph from "../Images/profile.png";
+import Nishant from "../Images/Team/nishant.jpg"
 
 function Team() {
   return (
@@ -14,32 +15,36 @@ function Team() {
         <br />
         <Row className="row1">
           <Col sm={12} md={6} lg={3} xl={3} xxl={3} className="sectionBox">
-            <div>
+            <div class="pfp">
               <img src={Graph} alt="" className="profileImg" />
             </div>
             <h4>Divyansh Goyal</h4>
-            <h6>Full-Stack Developer</h6>
+            <h6>Full-Stack Developer , Graphic Designer</h6>
+            <h7> - @ University </h7>
           </Col>
           <Col sm={12} md={6} lg={3} xl={3} xxl={3} className="sectionBox">
-            <div>
-              <img src={Graph} alt="" className="profileImg" />
+            <div class="pfp">
+              <img src={Nishant} alt="" className="profileImg" />
             </div>
-            <h4>Divyansh Goyal</h4>
-            <h6>Full-Stack Developer</h6>
+            <h4>Nishant Srinivasan</h4>
+            <h6>Full-Stack Developer , Graphic Designer</h6>
+            <h7>Computer Science @ UBC</h7>
           </Col>
           <Col sm={12} md={6} lg={3} xl={3} xxl={3} className="sectionBox">
-            <div>
+            <div class="pfp">
               <img src={Graph} alt="" className="profileImg" />
             </div>
-            <h4>Divyansh Goyal</h4>
-            <h6>Full-Stack Developer</h6>
+            <h4>Kenneth Lai</h4>
+            <h6>Marketing Lead, Graphic Designer</h6>
+            <h7> - @ University </h7>
           </Col>
           <Col sm={12} md={6} lg={3} xl={3} xxl={3} className="sectionBox">
-            <div>
+            <div class="pfp">
               <img src={Graph} alt="" className="profileImg" />
             </div>
-            <h4>Divyansh Goyal</h4>
+            <h4>Anish Singla</h4>
             <h6>Full-Stack Developer</h6>
+            <h7> - @ University </h7>
           </Col>
         </Row>
       </Container>
