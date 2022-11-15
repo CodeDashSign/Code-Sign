@@ -5,6 +5,7 @@ import Team from "./Components/Team";
 import Works from "./Components/Works";
 import Reviews from "./Components/Reviews";
 import Mission from "./Components/Mission";
+import NavbarCS from "./Components/NavbarCS";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {

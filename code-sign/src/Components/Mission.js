@@ -17,12 +17,13 @@ function Mission() {
               display: "flex",
               alignItems: "center",
             }}
-            className="d-none d-lg-block hidden-lg-down m-auto"
+            className="m-auto"
           >
             <img
               src={Graph}
               style={{ borderRadius: "30px" }}
-              className="d-none d-lg-block mx-auto img-fluid"
+              className=" mx-auto img-fluid"
+              alt=""
             />
           </Col>
           <Col
@@ -35,11 +36,16 @@ function Mission() {
               display: "flex",
               alignItems: "center",
             }}
-            className="d-none d-lg-block hidden-lg-down m-auto"
+            className="m-auto"
           >
             <p className="missionText">
               Code-Sign was created by a few university students who wanted to
-              put their technical abilities 
+              put their technical abilities to the test whilst helping
+              businesses and individuals expand their digital presence through
+              clean websites with a focus on user experience. Our team is
+              composed of members who are well versed in front-end and back-end
+              web technologies, marketing, social media, and more, all of which
+              we use to offer well-rounded services for all our clients.
             </p>
           </Col>
         </Row>
