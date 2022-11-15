@@ -3,6 +3,7 @@ import Why from "./Components/Why";
 import Landing from "./Components/Landing";
 import Team from "./Components/Team";
 import Mission from "./Components/Mission";
+import NavbarCS from "./Components/NavbarCS";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
             exact
             element={
               <>
+                <NavbarCS />
                 <Landing />
                 <Why />
                 <Mission />
