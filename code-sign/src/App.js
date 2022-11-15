@@ -16,7 +16,6 @@ function App() {
             exact
             element={
               <>
-                <NavbarCS />
                 <Landing />
                 <Why />
                 <Mission />
