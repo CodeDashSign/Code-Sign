@@ -22,7 +22,7 @@ function Mission() {
             <img
               src={Graph}
               style={{ borderRadius: "30px" }}
-              className=" mx-auto img-fluid"
+              className="mx-auto img-fluid"
               alt=""
             />
           </Col>

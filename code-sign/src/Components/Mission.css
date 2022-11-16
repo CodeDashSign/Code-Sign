@@ -5,11 +5,11 @@
 .missionParent {
   padding-top: 100px;
   padding-bottom: 100px;
-  background: linear-gradient(white, #d5dce0);
   /* background-color: #d5dce0; */
   background-size: cover;
-  background-position: right bottom;
+  background-position: left bottom;
   background-repeat: no-repeat;
+  background-image: url("../Images/arrows.png"), linear-gradient(white, #d5dce0);
 }
 
 .missionText {
