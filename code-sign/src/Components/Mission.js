@@ -39,13 +39,10 @@ function Mission() {
             className="m-auto"
           >
             <p className="missionText">
-              Code-Sign was created by a few university students who wanted to
-              put their technical abilities to the test whilst helping
-              businesses and individuals expand their digital presence through
-              clean websites with a focus on user experience. Our team is
-              composed of members who are well versed in front-end and back-end
-              web technologies, marketing, social media, and more, all of which
-              we use to offer well-rounded services for all our clients.
+              Code-Sign was created by a couple of ambitious university students
+              who wanted to create clean and modern websites to provide
+              businesses and individuals the edge they needed to level up their
+              digital presence.
             </p>
           </Col>
         </Row>
