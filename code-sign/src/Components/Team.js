@@ -4,6 +4,7 @@ import Graph from "../Images/profile.png";
 import Nishant from "../Images/Team/nishant.jpg"
 import Div from "../Images/Team/div.jpg"
 import Anish from "../Images/Team/anish.jpg"
+import Kenneth from "../Images/Team/kenneth.png"
 
 function Team() {
   return (
@@ -22,7 +23,7 @@ function Team() {
             </div>
             <h4>Divyansh Goyal</h4>
             <h6>Full-Stack Developer , Graphic Designer</h6>
-            <h7> - @ University </h7>
+            <h7> - @ University of Calgary</h7>
           </Col>
           <Col sm={12} md={6} lg={3} xl={3} xxl={3} className="sectionBox">
             <div class="pfp">
@@ -30,15 +31,15 @@ function Team() {
             </div>
             <h4>Nishant Srinivasan</h4>
             <h6>Full-Stack Developer , Graphic Designer</h6>
-            <h7>Computer Science @ UBC</h7>
+            <h7>Computer Science @ University of British Columbia</h7>
           </Col>
           <Col sm={12} md={6} lg={3} xl={3} xxl={3} className="sectionBox">
             <div class="pfp">
-              <img src={Graph} alt="" className="profileImg" />
+              <img src={Kenneth} alt="" className="profileImg" />
             </div>
             <h4>Kenneth Lai</h4>
             <h6>Marketing Lead, Graphic Designer</h6>
-            <h7> - @ University </h7>
+            <h7> - @ Western University </h7>
           </Col>
           <Col sm={12} md={6} lg={3} xl={3} xxl={3} className="sectionBox">
             <div class="pfp">
@@ -46,7 +47,7 @@ function Team() {
             </div>
             <h4>Anish Singla</h4>
             <h6>Full-Stack Developer</h6>
-            <h7> - @ University </h7>
+            <h7> - @ University of Toronto </h7>
           </Col>
         </Row>
       </Container>
