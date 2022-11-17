@@ -16,7 +16,7 @@ function App() {
             exact
             element={
               <>
-                <Landing />
+                {/* <Landing /> */}
                 <Why />
                 <Mission />
               </>
