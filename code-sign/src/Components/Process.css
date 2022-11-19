@@ -1,0 +1,106 @@
+.process {
+  width: 90vw;
+}
+
+.processParent {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background: linear-gradient(#d5dce0, white);
+}
+
+.processRect {
+  margin: auto;
+  width: 80%;
+  border-radius: 5px;
+  box-shadow: rgb(0, 0, 0) 0px 4px 6px;
+  font-size: 3vh;
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+  opacity: 0;
+}
+
+.processRect1 {
+  animation: slideIn 0.5s;
+  -webkit-animation: slideIn 0.5s;
+  animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+.processRect2 {
+  animation: slideIn 0.5s;
+  -webkit-animation: slideIn 0.5s;
+  animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+.processRect3 {
+  animation: slideIn 0.5s;
+  -webkit-animation: slideIn 0.5s;
+  animation-delay: 1.5s;
+  -webkit-animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+}
+.processRect4 {
+  animation: slideIn 0.5s;
+  -webkit-animation: slideIn 0.5s;
+  animation-delay: 2s;
+  -webkit-animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+.processRect5 {
+  animation: slideIn 0.5s;
+  -webkit-animation: slideIn 0.5s;
+  animation-delay: 2.5s;
+  -webkit-animation-delay: 2.5s;
+  animation-fill-mode: forwards;
+}
+
+.processRect > .colNumeral {
+  background-color: rgb(42, 79, 100);
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  font-size: 6vh;
+  color: rgba(255, 255, 255, 0.804);
+  font-family: "Quattrocento", sans-serif;
+}
+
+@media screen and (max-width: 450px) {
+  .processRect {
+    width: 90%;
+  }
+
+  .processRect > .colNumeral {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 0px;
+    font-size: 4vh;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@-webkit-keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+.hidden {
+  visibility: hidden;
+}

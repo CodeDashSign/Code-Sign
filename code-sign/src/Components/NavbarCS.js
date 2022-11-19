@@ -1,7 +1,7 @@
 import "./NavbarCS.css";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { useState, useRef, useEffect } from "react";
-import Logo from "../Images/logo_nav.png";
+import Logo from "../Images/logo2.png";
 
 function NavbarCS() {
   const [navBackground, setNavBackground] = useState(false);
@@ -16,7 +16,7 @@ function NavbarCS() {
   const dimensions = window;
   useEffect(() => {
     const handleScroll = () => {
-      const show = window.scrollY > dimensions.innerHeight - 70;
+      const show = window.scrollY > 0;
       if (navRef.current !== show) {
         setNavBackground(show);
       }
@@ -32,26 +32,36 @@ function NavbarCS() {
     <>
       <Navbar
         collapseOnSelect
-        className="navbarMainTag fixed-top fs-4"
-        expand="lg"
+        className="navbarMainTag fixed-top"
+        expand="false"
         variant="dark"
-        style={{
-          visibility: navBackground ? "visible" : "hidden",
-          backgroundColor: navBackground ? "transparent" : "transparent",
-          transition: "0.5s ease-in-out",
-        }}
+        style={{ backgroundColor: "#d5dce0" }}
+        // style={{
+        //   visibility: navBackground ? "visible" : "hidden",
+        //   backgroundColor: navBackground ? "#d5dce0" : "transparent",
+        //   transition: "0.5s ease-in-out",
+        // }}
       >
         <Container fluid>
           <Navbar.Brand>
-            <img src={Logo} width={"20%"} />
+            <img
+              src={Logo}
+              width={"20%"}
+              alt=""
+              style={{ paddingLeft: "0px", paddingRight: "0px" }}
+            />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav
               className="me-auto justify-content-center"
-              style={{ width: "100%" }}
+              style={{ width: "50%", textAlign: "center", margin: "auto" }}
             >
-              <Nav.Link active href="#about" style={navLinkStyle}>
+              <Nav.Link
+                style={{ backgroundColor: "red", borderRadius: "15px" }}
+                active
+                href="#about"
+              >
                 Introduction
               </Nav.Link>
               <Nav.Link active href="#services" style={navLinkStyle}>
