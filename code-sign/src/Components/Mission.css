@@ -21,10 +21,15 @@
   font-family: "Poppins", sans-serif;
 }
 
+.missionOrig {
+  opacity: 0;
+}
+
 .processAnim {
   animation-name: slideInFromLeft;
   animation-duration: 2s;
-  -webkit-animation: slideInFromLeft 2s;
+  animation-fill-mode: forwards;
+  -webkit-animation: slideInFromLeft 2s forwards;
 }
 
 @keyframes slideInFromLeft {
@@ -33,7 +38,7 @@
     transform: translateY(-10%);
   }
 
-  50% {
+  100% {
     opacity: 1;
     transform: translateY(0%);
   }

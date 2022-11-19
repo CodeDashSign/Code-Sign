@@ -11,7 +11,11 @@ function Mission() {
   return (
     <Container fluid className="missionParent">
       <Container fluid className="mission" id="mission" ref={missionRef}>
-        <Row className={`${""} ${missionVisible ? "processAnim" : ""}`}>
+        <Row
+          className={`${"missionOrig"} ${
+            missionVisible ? "processAnim" : "missionOrig"
+          }`}
+        >
           <Col
             sm={12}
             md={12}
