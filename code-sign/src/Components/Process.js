@@ -3,7 +3,10 @@ import { useInView } from "react-intersection-observer";
 import "./Process.css";
 
 function Process() {
-  const { ref: myRef, inView: myElementIsVisible } = useInView();
+  const { ref: myRef, inView: myElementIsVisible } = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
   return (
     <Container fluid className="processParent">
       <Container fluid className="process" id="process" ref={myRef}>
