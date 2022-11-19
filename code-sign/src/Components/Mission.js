@@ -1,12 +1,17 @@
 import "./Mission.css";
 import Graph from "../Images/graph.jpg";
 import { Container, Row, Col } from "react-bootstrap";
+import { useInView } from "react-intersection-observer";
 
 function Mission() {
+  const { ref: missionRef, inView: missionVisible } = useInView({
+    threshold: 0.2,
+    triggerOnce: true,
+  });
   return (
     <Container fluid className="missionParent">
-      <Container fluid className="mission" id="mission">
-        <Row>
+      <Container fluid className="mission" id="mission" ref={missionRef}>
+        <Row className={`${""} ${missionVisible ? "processAnim" : ""}`}>
           <Col
             sm={12}
             md={12}

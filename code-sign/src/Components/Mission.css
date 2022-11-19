@@ -20,3 +20,21 @@
   text-align: left;
   font-family: "Poppins", sans-serif;
 }
+
+.processAnim {
+  animation-name: slideInFromLeft;
+  animation-duration: 2s;
+  -webkit-animation: slideInFromLeft 2s;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateY(-10%);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}

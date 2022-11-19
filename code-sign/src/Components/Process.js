@@ -3,13 +3,13 @@ import { useInView } from "react-intersection-observer";
 import "./Process.css";
 
 function Process() {
-  const { ref: myRef, inView: myElementIsVisible } = useInView({
+  const { ref: processRef, inView: processVisible } = useInView({
     triggerOnce: true,
     threshold: 0.2,
   });
   return (
     <Container fluid className="processParent">
-      <Container fluid className="process" id="process" ref={myRef}>
+      <Container fluid className="process" id="process" ref={processRef}>
         <Row className="title">
           <h1 className="whyTitle">The Code-Sign Process</h1>
           <hr className="titleLine" />
@@ -19,7 +19,7 @@ function Process() {
         <div className="processRects">
           <Row
             className={`${"processRect"} ${
-              myElementIsVisible ? "processRect1" : "hidden"
+              processVisible ? "processRect1" : "hidden"
             }`}
           >
             <Col
@@ -39,7 +39,7 @@ function Process() {
           <br />
           <Row
             className={`${"processRect"} ${
-              myElementIsVisible ? "processRect2" : "hidden"
+              processVisible ? "processRect2" : "hidden"
             }`}
           >
             <Col
@@ -66,7 +66,7 @@ function Process() {
           <br />
           <Row
             className={`${"processRect"} ${
-              myElementIsVisible ? "processRect3" : "hidden"
+              processVisible ? "processRect3" : "hidden"
             }`}
           >
             <Col
@@ -86,7 +86,7 @@ function Process() {
           <br />
           <Row
             className={`${"processRect"} ${
-              myElementIsVisible ? "processRect4" : "hidden"
+              processVisible ? "processRect4" : "hidden"
             }`}
           >
             <Col
@@ -113,7 +113,7 @@ function Process() {
           <br />
           <Row
             className={`${"processRect"} ${
-              myElementIsVisible ? "processRect5" : "hidden"
+              processVisible ? "processRect5" : "hidden"
             }`}
           >
             <Col
