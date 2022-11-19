@@ -24,3 +24,44 @@
 .pfp{
   padding:2em;
 }
+
+@media screen and (max-width:1280px){
+
+  .team {
+    width: 50vw;
+    color: white;
+  }
+
+  .profileImg {
+    box-shadow: 0 5px 11px 0 rgb(0 0 0 / 18%), 0 4px 15px 0 rgb(0 0 0 / 15%) !important;
+    border-radius: 0.25rem !important;
+    max-width: 250px;
+    max-height: 250px;
+  }
+}
+
+@media screen and (max-width:1024px){
+
+  .team {
+    width: 50vw;
+    color: white;
+  }
+
+  .profileImg {
+    box-shadow: 0 5px 11px 0 rgb(0 0 0 / 18%), 0 4px 15px 0 rgb(0 0 0 / 15%) !important;
+    border-radius: 0.25rem !important;
+    max-width: 200px;
+    max-height: 200px;
+  }
+}
+
+@media screen and (max-width:540px){
+
+  .profileImg {
+    box-shadow: 0 5px 11px 0 rgb(0 0 0 / 18%), 0 4px 15px 0 rgb(0 0 0 / 15%) !important;
+    border-radius: 0.25rem !important;
+    max-width: 200px;
+    max-height: 200px;
+  }
+
+}

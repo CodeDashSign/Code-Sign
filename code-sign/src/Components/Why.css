@@ -4,40 +4,56 @@
 
 .whyParent {
   padding-top: 100px;
-  padding-bottom: 100px;
-  background-color: #d5dce0;
-  background-image: url("../Images/bars.png");
+  /* padding-bottom: 100px; */
+  /* background-color: #d5dce0; */
+  background-image: url("../Images/bars.png"), linear-gradient(#d5dce0, white);
   background-size: cover;
   background-position: right bottom;
   background-repeat: no-repeat;
 }
 
-@media screen and (max-width: 992px) {
+.whySection > h2 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  color: black;
+  font-size: 30px;
+}
+
+@media screen and (max-width: 450px) {
   .whyParent {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    background-color: #d5dce0;
-    background-image: url("../Images/bars.png");
+    padding-top: 50px;
+    /* padding-bottom: 50px; */
+    /* background-color: #d5dce0; */
+    background-image: url("../Images/bars_mobile.png"),
+      linear-gradient(#d5dce0, white);
     background-size: cover;
-    background-position: bottom;
+    background-position: bottom right;
+  }
+
+  .whySection > h2 {
+    font-size: 27px;
   }
 }
 
-body {
-  background-color: black;
-}
-
-.whySection > h2 {
-  font-family: "Quicksand", sans-serif;
-  font-weight: 400;
-  color: black;
+@media screen and (max-width: 992px) and (min-width: 451px) {
+  .whyParent {
+    padding-top: 50px;
+    /* padding-bottom: 50px; */
+    /* background-color: #d5dce0; */
+    background-image: url("../Images/bars_tablet.png"),
+      linear-gradient(#d5dce0, white);
+    background-size: cover;
+    background-position: bottom right;
+  }
 }
 
 .whySection > ul > li {
   list-style-type: none;
-  font-size: 2.5vh;
+  font-size: 2.8vh;
+  font-weight: 400;
   color: black;
   padding-left: 5%;
+  font-family: "Poppins", sans-serif;
 }
 
 .whySection {
@@ -48,12 +64,14 @@ body {
   /* transition: 0.5s ease-in-out; */
 }
 
-.mainPoints {
-  color: black;
-}
-
 .whyTitle {
   font-family: "Quicksand", sans-serif;
   color: black;
-  /* font-weight: 600; */
+  font-weight: 600;
+  font-size: 35px;
+  text-align: left;
+}
+
+.mainPoints {
+  color: rgb(42, 79, 100);
 }

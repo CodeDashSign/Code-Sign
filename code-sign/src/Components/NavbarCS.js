@@ -1,6 +1,7 @@
 import "./NavbarCS.css";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { useState, useRef, useEffect } from "react";
+import Logo from "../Images/logo_nav.png";
 
 function NavbarCS() {
   const [navBackground, setNavBackground] = useState(false);
@@ -36,32 +37,28 @@ function NavbarCS() {
         variant="dark"
         style={{
           visibility: navBackground ? "visible" : "hidden",
-          backgroundColor: navBackground ? "black" : "transparent",
+          backgroundColor: navBackground ? "transparent" : "transparent",
           transition: "0.5s ease-in-out",
         }}
       >
         <Container fluid>
-          <Navbar.Brand
-            href="#"
-            className="logo"
-            style={{ color: navBackground ? "white" : "black" }}
-          >
-            Shringar
+          <Navbar.Brand>
+            <img src={Logo} width={"20%"} />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav
-              className="me-auto justify-content-end"
+              className="me-auto justify-content-center"
               style={{ width: "100%" }}
             >
               <Nav.Link active href="#about" style={navLinkStyle}>
-                About
+                Introduction
               </Nav.Link>
               <Nav.Link active href="#services" style={navLinkStyle}>
-                Services
+                Previous Experiences
               </Nav.Link>
               <Nav.Link active href="#contact" style={navLinkStyle}>
-                Contact
+                Get in Touch
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
