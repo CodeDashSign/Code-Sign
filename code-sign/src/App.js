@@ -6,6 +6,8 @@ import Works from "./Components/Works";
 import Reviews from "./Components/Reviews";
 import Mission from "./Components/Mission";
 import NavbarCS from "./Components/NavbarCS";
+import Process from "./Components/Process";
+import Principles from "./Components/Principles";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -18,9 +20,12 @@ function App() {
             exact
             element={
               <>
+                {/* <NavbarCS /> */}
                 <Landing />
                 <Why />
+                <Principles />
                 <Mission />
+                <Process />
               </>
             }
           />
