@@ -5,6 +5,7 @@ import Team from "./Components/Team";
 import Mission from "./Components/Mission";
 import NavbarCS from "./Components/NavbarCS";
 import Process from "./Components/Process";
+import Principles from "./Components/Principles";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -18,8 +19,9 @@ function App() {
             element={
               <>
                 {/* <NavbarCS /> */}
-                {/* <Landing /> */}
+                <Landing />
                 <Why />
+                <Principles />
                 <Mission />
                 <Process />
               </>

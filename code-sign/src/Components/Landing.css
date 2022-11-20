@@ -1,16 +1,43 @@
-.whySectionTitle {
-  padding-bottom: 2px;
-}
-
-.title > hr {
-  width: 20vw;
-  border: none;
-  height: 5px;
-  /* Set the hr color */
-  color: #0054a1; /* old IE */
-  background-color: #0054a1; /* Modern Browsers */
-}
-
 .landingParent {
-  
+  background-image: linear-gradient(white, #d5dce0);
+  height: 100vh;
+}
+
+.landing {
+  width: 90vw;
+}
+
+.landingLogo {
+  max-height: 80vh;
+  max-width: 80vh;
+}
+
+.imgLanding {
+  animation-name: rotateAround;
+  animation-duration: 4s;
+  transition: ease-in-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes rotateAround {
+  0% {
+    transform: rotate3d(0, 1, 0, 270deg);
+  }
+
+  100% {
+    transform: rotate3d(0, 1, 0, 360deg);
+  }
+}
+
+.subTitle {
+  font-size: 30px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+}
+
+.landingBtn {
+  padding: 5px;
+  background-color: #d5dce0;
+  border: none;
 }

@@ -79,7 +79,14 @@ function Process() {
             >
               III
             </Col>
-            <Col sm={10} md={10} lg={10} xl={10} xxl={10}>
+            <Col
+              sm={10}
+              md={10}
+              lg={10}
+              xl={10}
+              xxl={10}
+              className="justify-content-center align-items-center d-flex"
+            >
               Iterative development with a focus on client feedback
             </Col>
           </Row>
