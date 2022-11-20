@@ -22,11 +22,13 @@
 
 @keyframes rotateAround {
   0% {
-    transform: rotate3d(0, 1, 0, 270deg);
+    transform: rotate3d(1, 1, 0.5, 45deg);
+    opacity: 0;
   }
 
   100% {
-    transform: rotate3d(0, 1, 0, 360deg);
+    transform: rotate3d(1, 1, 0.5, 0deg);
+    opacity: 1;
   }
 }
 
