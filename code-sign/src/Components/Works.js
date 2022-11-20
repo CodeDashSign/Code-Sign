@@ -1,6 +1,8 @@
 import "./Works.css";
 import { Container, Row, Col, Card } from "react-bootstrap";
-import Graph from "../Images/profile.png";
+import shringar from "../Images/works/shringar_product.png";
+import sneak from "../Images/works/sneak.png"
+import ac from "../Images/works/ac.png"
 
 function Works(){
     return(
@@ -8,18 +10,57 @@ function Works(){
       <Container fluid className="Works" id="Works">
         <Row className="title">
           <h1 className="text-start WorksTitle">Some of our previous works</h1>
-          <hr className="titleLine" />
+          {/* <hr className="titleLine" /> */}
         </Row>
         <br />
         <br />
         <Row className="row1">
-          <Col sm={3} md={6} lg={3} xl={3} xxl={3} className="sectionBox">
-            <div>
-              <img src={Graph} alt="" className="profileImg" />
+          <div class="work">
+
+            <div class="workImg">
+              <a href="https://shringar.beauty/" target="_blank" rel="noreferrer">
+                <img src={shringar} alt="" className="productImg" />
+              </a>
             </div>
-            <h4>Shringar</h4>
-            <h6>Beauty Salon</h6>
-          </Col>
+
+            <div class="workDesc">   
+              <h4>Shringar</h4>
+              <h6>Beauty Salon</h6>
+            </div>
+
+          </div>
+        </Row>
+        <Row className="row1">
+          <div class="work">
+
+            <div class="workImg">
+              <a href="https://shringar.beauty/" target="_blank" rel="noreferrer">
+                <img src={sneak} alt="" className="productImg" />
+              </a>
+            </div>
+
+            <div class="workDesc">   
+              <h4>Sneaker-Seek</h4>
+              <h6>Beauty Salon</h6>
+            </div>
+
+          </div>
+        </Row>
+        <Row className="row1">
+          <div class="work">
+
+            <div class="workImg">
+              <a href="https://shringar.beauty/" target="_blank" rel="noreferrer">
+                <img src={ac} alt="" className="productImg" />
+              </a>
+            </div>
+
+            <div class="workDesc">   
+              <h4>Aucci</h4>
+              <h6>Beauty Salon</h6>
+            </div>
+
+          </div>
         </Row>
       </Container>
     </Container>
