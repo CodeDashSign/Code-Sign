@@ -20,9 +20,9 @@ function App() {
               <>
                 {/* <NavbarCS /> */}
                 <Landing />
+                <Mission />
                 <Why />
                 <Principles />
-                <Mission />
                 <Process />
               </>
             }

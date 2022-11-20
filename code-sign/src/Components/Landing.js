@@ -21,12 +21,12 @@ function Landing() {
           />
         </Row>
         <Row>
-          <p className="subTitle">
-            Together, we can upgrade your business, one pixel at a time
-          </p>
-          <button onClick={"location.href='#why'"} className="landingBtn">
-            Digitize Your Business With Us
-          </button>
+          <div className={`${""} ${missionVisible ? "subTitle" : ""}`}>
+            <p>Together, we can upgrade your business, one pixel at a time</p>
+            <a href="#why" className="landingBtn">
+              Digitize Your Business With Us
+            </a>
+          </div>
         </Row>
       </Container>
     </Container>

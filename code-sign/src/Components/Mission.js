@@ -16,7 +16,7 @@ function Mission() {
             missionVisible ? "processAnim" : "missionOrig"
           }`}
         >
-          <Col
+          {/* <Col
             sm={12}
             md={12}
             lg={6}
@@ -34,13 +34,13 @@ function Mission() {
               className="mx-auto img-fluid"
               alt=""
             />
-          </Col>
+          </Col> */}
           <Col
             sm={12}
             md={12}
-            lg={6}
-            xl={6}
-            xxl={6}
+            lg={12}
+            xl={12}
+            xxl={12}
             style={{
               display: "flex",
               alignItems: "center",
