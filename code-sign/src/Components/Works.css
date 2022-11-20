@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Inter');
+
+.WorksParent {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: white;
+    background: url('../Images/bckg1.png'), linear-gradient(#d5dce0,white);
+    background-repeat: repeat;
+  }
+  
+  .WorksTitle{
+    color:white;
+    font-weight: 500;
+  }
+
+  .work{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .productImg{
+    max-width: 1200px;
+  }
+
+  .workDesc{
+    padding: 1em 4em 1em 4em;
+    margin-left: -8em;
+  }
+
+  .workDesc h4{
+    color: #0a5999;
+    font-size: 4em;
+    font-weight: 900;
+  }
+
+  .workDesc h6{
+    color: #9fafce;
+    font-size: 2em;
+  }
+
+  a{
+    text-decoration:none;
+  }
+
+  @media screen and (max-width:1280px){
+
+    .WorksTitle{
+      color:white;
+      font-weight: 500;
+    }
+  
+    .productImg{
+      max-width: 700px;
+    }
+  
+    .workDesc{
+      padding: 1em 4em 1em 4em;
+      margin-left:-6em;
+    }
+
+    .workDesc h4{
+      font-weight: 900;
+    }
+  
+    .workDesc h6{
+    }
+  
+  }
+
+  @media screen and (max-width:1024px){
+
+    .WorksParent {
+      background: url('../Images/square_tablet.png'), linear-gradient(#d5dce0,white);
+    }
+
+    .WorksTitle{
+      color:white;
+      font-weight: 500;
+    }
+  
+    .productImg{
+      max-width: 500px;
+    }
+  
+    .workDesc{
+      padding: 1em 4em 1em 4em;
+      margin-left:-3em;
+    }
+
+    .workDesc h4{
+      font-weight: 900;
+    }
+  
+    .workDesc h6{
+    }
+  
+  }
+
+  @media screen and (max-width:540px){
+
+    .WorksParent {
+      background: url('../Images/square_mobile.png'), linear-gradient(#d5dce0,white);
+      background-repeat: no-repeat;
+    }
+
+    .WorksTitle{
+      color:white;
+      font-weight: 500;
+    }
+  
+    .productImg{
+      max-width: 350px;
+    }
+  
+    .workDesc{
+      margin-left: -1em;
+      padding:0;
+    }
+  
+    .workDesc h4{
+      font-size: 2em;
+      font-weight: 900;
+    }
+  
+    .workDesc h6{
+      font-size: 1em;
+    }
+  
+  }
