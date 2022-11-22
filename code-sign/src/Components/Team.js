@@ -51,7 +51,10 @@ function Team() {
             </a>
           </Col>
           <Col sm={12} md={6} lg={3} xl={3} xxl={3} className="sectionBox">
-            <a href="https://anishsingla.me/" target={"_blank"}>
+            <a
+              href="https://www.linkedin.com/in/anish-singla/"
+              target={"_blank"}
+            >
               <div className="pfp">
                 <img src={Anish} alt="" className="profileImg" />
               </div>

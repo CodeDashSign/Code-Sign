@@ -2,7 +2,7 @@ import "./Works.css";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import shringar from "../Images/works/shringar_product.png";
 import sneak from "../Images/works/sneak.png";
-import ac from "../Images/works/ac.png";
+import ac from "../Images/works/ac2.png";
 
 function Works() {
   return (
@@ -10,7 +10,7 @@ function Works() {
       <Container fluid className="Works" id="Works">
         <Row className="title">
           <h1 className="text-start WorksTitle">Some of our previous works</h1>
-          {/* <hr className="titleLine" /> */}
+          <hr />
         </Row>
         <br />
         <br />
@@ -21,52 +21,42 @@ function Works() {
                 href="https://shringar.beauty/"
                 target="_blank"
                 rel="noreferrer"
+                className="worksHover"
               >
                 <img src={shringar} alt="" className="productImg" />
               </a>
             </div>
-
-            <div className="workDesc">
-              <h4>Shringar</h4>
-              <h6>Beauty Salon</h6>
-            </div>
           </div>
         </Row>
         <Row className="row1">
           <div className="work">
             <div className="workImg">
               <a
-                href="https://shringar.beauty/"
+                href="https://sneakerseek.herokuapp.com/"
                 target="_blank"
                 rel="noreferrer"
+                className="worksHover"
               >
                 <img src={sneak} alt="" className="productImg" />
               </a>
             </div>
-
-            <div className="workDesc">
-              <h4>Sneaker-Seek</h4>
-              <h6>Beauty Salon</h6>
-            </div>
           </div>
         </Row>
-        <Row className="row1">
-          <div className="work">
-            <div className="workImg">
-              <a
-                href="https://shringar.beauty/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img src={ac} alt="" className="productImg" />
-              </a>
+        <Row className="row2">
+          <Col lg={12} style={{ margin: "auto" }}>
+            <div className="work">
+              <div className="workImg">
+                <a
+                  href="https://aucciapplication.herokuapp.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="worksHover"
+                >
+                  <img src={ac} alt="" className="productImg" />
+                </a>
+              </div>
             </div>
-
-            <div className="workDesc">
-              <h4>Aucci</h4>
-              <h6>Beauty Salon</h6>
-            </div>
-          </div>
+          </Col>
         </Row>
       </Container>
     </Container>

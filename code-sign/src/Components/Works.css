@@ -3,28 +3,27 @@
 .WorksParent {
   padding-top: 100px;
   padding-bottom: 100px;
-  color: white;
   background: url("../Images/bckg1.png"), linear-gradient(#d5dce0, white);
   background-repeat: repeat;
+  font-family: inter;
 }
 
-.WorksTitle {
-  color: black;
-  font-weight: 500;
+.Works {
+  width: 90vw;
 }
 
-.work {
+/* .work {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-}
+} */
 
 .productImg {
-  max-width: 1200px;
+  max-width: 65%;
 }
 
-.workDesc {
+/* .workDesc {
   padding: 1em 4em 1em 4em;
   margin-left: -8em;
 }
@@ -38,13 +37,13 @@
 .workDesc h6 {
   color: #9fafce;
   font-size: 2em;
-}
+} */
 
 a {
   text-decoration: none;
 }
 
-@media screen and (max-width: 1280px) {
+/* @media screen and (max-width: 1280px) {
   .WorksTitle {
     color: white;
     font-weight: 500;
@@ -123,5 +122,21 @@ a {
 
   .workDesc h6 {
     font-size: 1em;
+  }
+} */
+
+.productImg {
+  transform: rotate3d(1, 1, 0, 30deg);
+  transition: 0.75s ease-in-out;
+}
+
+.worksHover:hover .productImg {
+  transform: rotate3d(0, 0, 0, 0deg);
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 450px) {
+  .productImg {
+    max-width: 100%;
   }
 }
