@@ -84,3 +84,25 @@
 .mainPoints {
   color: rgb(42, 79, 100);
 }
+
+.whyOrig {
+  opacity: 0;
+}
+
+.whyAnim {
+  animation: Fade;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes Fade {
+  0% {
+    opacity: 0;
+    transform: translateY(10%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}

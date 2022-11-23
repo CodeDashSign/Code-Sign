@@ -46,16 +46,16 @@
 }
 
 .processAnim {
-  animation-name: slideInFromLeft;
-  animation-duration: 2s;
+  animation-name: Fade;
+  animation-duration: 1.5s;
   animation-fill-mode: forwards;
-  -webkit-animation: slideInFromLeft 2s forwards;
+  -webkit-animation: Fade 1.5s forwards;
 }
 
-@keyframes slideInFromLeft {
+@keyframes Fade {
   0% {
     opacity: 0;
-    transform: translateY(-10%);
+    transform: translateY(10%);
   }
 
   100% {
