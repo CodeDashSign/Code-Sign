@@ -1,4 +1,4 @@
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import { useInView } from "react-intersection-observer";
 import "./Process.css";
 
@@ -145,6 +145,15 @@ function Process() {
             </Col>
           </Row>
         </div>
+        <Button
+          href="experience"
+          className={`${"meetTeamButtonOrig"} ${
+            processVisible ? "meetTeamButtonAnim" : "meetTeamButtonOrig"
+          }`}
+        >
+          <span>Ready to Meet Our Team?</span>
+          <span className="arrow"> &#8594;</span>
+        </Button>
       </Container>
     </Container>
   );

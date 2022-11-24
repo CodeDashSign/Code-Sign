@@ -8,6 +8,7 @@ import Mission from "./Components/Mission";
 import NavbarCS from "./Components/NavbarCS";
 import Process from "./Components/Process";
 import Principles from "./Components/Principles";
+import Contact from "./Components/Contact";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -30,21 +31,17 @@ function App() {
             }
           />
           <Route
-            path="/experience" 
+            path="/experience"
             exact
             element={
               <>
                 <Team />
-                <Works/>
-                <Reviews/>
+                <Works />
+                <Reviews />
               </>
-            } 
+            }
           />
-          <Route exact path="/contact" 
-            element={
-              <Landing />
-            } 
-          />
+          <Route exact path="/contact" element={<Contact />} />
         </Routes>
       </div>
     </BrowserRouter>
