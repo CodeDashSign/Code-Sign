@@ -12,118 +12,13 @@
   width: 90vw;
 }
 
-/* .work {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-} */
-
 .productImg {
   max-width: 65%;
 }
 
-/* .workDesc {
-  padding: 1em 4em 1em 4em;
-  margin-left: -8em;
-}
-
-.workDesc h4 {
-  color: #0a5999;
-  font-size: 4em;
-  font-weight: 900;
-}
-
-.workDesc h6 {
-  color: #9fafce;
-  font-size: 2em;
-} */
-
 a {
   text-decoration: none;
 }
-
-/* @media screen and (max-width: 1280px) {
-  .WorksTitle {
-    color: white;
-    font-weight: 500;
-  }
-
-  .productImg {
-    max-width: 700px;
-  }
-
-  .workDesc {
-    padding: 1em 4em 1em 4em;
-    margin-left: -6em;
-  }
-
-  .workDesc h4 {
-    font-weight: 900;
-  }
-
-  .workDesc h6 {
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .WorksParent {
-    background: url("../Images/square_tablet.png"),
-      linear-gradient(#d5dce0, white);
-  }
-
-  .WorksTitle {
-    color: white;
-    font-weight: 500;
-  }
-
-  .productImg {
-    max-width: 500px;
-  }
-
-  .workDesc {
-    padding: 1em 4em 1em 4em;
-    margin-left: -3em;
-  }
-
-  .workDesc h4 {
-    font-weight: 900;
-  }
-
-  .workDesc h6 {
-  }
-}
-
-@media screen and (max-width: 540px) {
-  .WorksParent {
-    background: url("../Images/square_mobile.png"),
-      linear-gradient(#d5dce0, white);
-    background-repeat: no-repeat;
-  }
-
-  .WorksTitle {
-    color: white;
-    font-weight: 500;
-  }
-
-  .productImg {
-    max-width: 350px;
-  }
-
-  .workDesc {
-    margin-left: -1em;
-    padding: 0;
-  }
-
-  .workDesc h4 {
-    font-size: 2em;
-    font-weight: 900;
-  }
-
-  .workDesc h6 {
-    font-size: 1em;
-  }
-} */
 
 .productImg {
   transform: rotate3d(1, 1, 0, 30deg);
@@ -135,6 +30,11 @@ a {
 }
 
 @media screen and (max-width: 450px) {
+  .WorksParent {
+    background: url("../Images/square_mobile.png"),
+      linear-gradient(#d5dce0, white);
+  }
+
   .productImg {
     max-width: 100%;
     transform: none;
@@ -153,6 +53,84 @@ a {
   animation: Fade;
   animation-duration: 1.5s;
   animation-fill-mode: forwards;
+}
+
+.worksButtonOrig {
+  font-size: 3vh;
+  background-color: #d5dce0;
+  font-family: "Poppins", sans-serif;
+  color: black;
+  box-shadow: 3px 3px 3px black;
+  border: none;
+  background: linear-gradient(to right, #d5dce0 50%, rgb(42, 79, 100) 50%);
+  background-size: 200% 100%;
+  background-position: 50% 100%;
+  opacity: 0;
+}
+
+.worksButtonAnim {
+  animation: Fade 1.5s forwards;
+  -webkit-animation: Fade 1.5s forwards;
+  transition: 0.5s ease-in-out;
+}
+
+.worksButtonAnim:hover {
+  background-position: 100% 100%;
+  color: white;
+  box-shadow: 0px 0px 0px black;
+}
+
+.arrow {
+  font-size: 5vh;
+  transition: 0.5s ease-in-out;
+}
+
+.worksButtonAnim:hover .arrow {
+  color: white;
+  padding-left: 10px;
+}
+
+@media screen and (max-width: 450px) {
+  .worksButtonAnim:hover {
+    background-position: 150% 100%;
+    color: black;
+  }
+
+  .worksButtonAnim:active {
+    background-position: 250% 100%;
+    color: black;
+    box-shadow: 3px 3px 3px black;
+  }
+
+  .arrow {
+    font-size: 3vh;
+  }
+
+  .worksButtonAnim:hover .arrow {
+    color: black;
+    padding-left: 0;
+  }
+
+  .worksButtonAnim {
+    font-size: 2.4vh;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .worksButtonAnim {
+    font-size: 2.4vh;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .worksButtonAnim {
+    font-size: 2.4vh;
+  }
+
+  .arrow {
+    display: none;
+    font-size: 2.5vh;
+  }
 }
 
 @keyframes Fade {

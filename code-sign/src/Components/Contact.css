@@ -1,22 +1,120 @@
 .contact {
-  width: 60vw;
+  width: 90vw;
   background-color: transparent;
 }
 
 .contactParent {
   padding-top: 100px;
-  /* padding-bottom: 100px; */
+  padding-bottom: 100px;
   /* background-color: #d5dce0; */
-  background-image: linear-gradient(#d5dce0, white);
+  background-color: rgb(42, 79, 100);
   background-size: cover;
   background-position: right bottom;
   background-repeat: no-repeat;
 }
 
-.contactCard {
-  box-shadow: 0 0px 20px 0 rgb(0 0 0 / 20%);
+.contactForm {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 3vh;
+  color: white;
 }
 
-.contactInfo {
-  background-color: blue;
+@media screen and (max-width: 450px) {
+  .contactCard {
+    font-size: 2.4vh;
+  }
+}
+
+.contactTitle {
+  font-family: "Quicksand", sans-serif;
+  color: white;
+  font-weight: 600;
+  font-size: 40px;
+  text-align: left;
+}
+
+.submitBtn {
+  text-align: right;
+}
+
+.submitButton {
+  font-size: 3vh;
+  background-color: #d5dce0;
+  font-family: "Poppins", sans-serif;
+  box-shadow: 3px 3px 3px black;
+  color: black;
+  border: none;
+  transition: 0.5s ease-in-out;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.submitButton:hover {
+  box-shadow: none;
+  background-color: rgb(42, 79, 100);
+  color: white;
+}
+
+.submitButton:active {
+  background-color: #d5dce0;
+  color: black;
+}
+
+.contactText {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 4vh;
+  color: white;
+}
+
+.mainPoints2 {
+  color: #4ba3c3;
+}
+
+.email {
+  color: white;
+  transition: 0.5s ease-in-out;
+}
+
+.email:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.contactDetails {
+  font-size: 18px;
+}
+
+.contactDetailsImg {
+  height: 1.2em;
+  width: auto;
+  display: inline-block;
+}
+
+.inputField {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid black;
+  display: inline-block;
+  width: 100%;
+  color: white;
+}
+
+.inputFieldMessage {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid black;
+  display: inline-block;
+  width: 100%;
+  color: white;
+  height: 100px;
+}
+
+@media screen and (max-width: 450px) {
+  .contactDetails {
+    font-size: 14px;
+  }
 }

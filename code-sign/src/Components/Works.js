@@ -1,5 +1,5 @@
 import "./Works.css";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import shringar from "../Images/works/shringar_product.png";
 import sneak from "../Images/works/sneak.png";
 import ac from "../Images/works/ac2.png";
@@ -71,6 +71,17 @@ function Works() {
             </Col>
           </Row>
         </div>
+        <br />
+        <br />
+        <Button
+          href="contact"
+          className={`${"worksButtonOrig"} ${
+            worksVisible ? "worksButtonAnim" : "worksButtonOrig"
+          }`}
+        >
+          <span>Ready to Get in Touch?</span>
+          <span className="arrow"> &#8594;</span>
+        </Button>
       </Container>
     </Container>
   );
