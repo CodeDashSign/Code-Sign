@@ -1,47 +1,100 @@
 import "./Contact.css";
 import { Container, Row, Col } from "react-bootstrap";
+import Location from "../Images/location-dot.svg";
+import Email from "../Images/email.svg";
 
 const Contact = () => {
   return (
     <Container fluid className="contactParent">
       <Container fluid className="contact" id="contact">
-        <Row>
-          <h1>Get in Touch With Us!</h1>
-          <p>
-            We would love to work together with you and provide you the clean
-            website your business needs to level up!
-          </p>
-        </Row>
-        <Row className="contactCard">
-          <Col xs={12} sm={12} md={12} lg={8} xl={8} className="contactForm">
+        <Row className="align-items-center">
+          <Col xs={12} sm={5} md={5} lg={5} xl={5}>
+            <Row>
+              <h1 className="contactTitle">
+                THIS IS YOUR <b className="mainPoints2">SIGN</b> TO LEVEL UP
+                YOUR DIGITAL PRESENCE.
+              </h1>
+              <br />
+              <p className="contactText text-start">
+                We would love to start working with you in bringing your website
+                ideas to life!
+              </p>
+            </Row>
+          </Col>
+          <Col xs={12} sm={1} md={1} lg={1} xl={1}></Col>
+          <Col xs={12} sm={6} md={6} lg={6} xl={6} className="contactForm">
+            <p className="contactDetails text-start">
+              <img src={Location} alt="" className="contactDetailsImg" />
+              &nbsp;&nbsp;&nbsp; Calgary, AB, Canada
+            </p>
+            <p className="contactDetails text-start">
+              <img src={Email} alt="" className="contactDetailsImg" />
+              &nbsp;&nbsp;&nbsp;
+              <a className="email" href="mailto:codedashsign@gmail.com">
+                codedashsign@gmail.com
+              </a>
+            </p>
+            <br />
             <form
               id="contact-form"
               //   onSubmit={this.handleSubmit.bind(this)}
               method="POST"
+              className="text-start"
             >
               <div className="form-group">
-                <label htmlFor="name">Name</label>
-                <input type="text" className="form-control" />
-              </div>
-              <div className="form-group">
-                <label htmlFor="exampleInputEmail1">Email address</label>
+                <label htmlFor="nameField">To: </label>
                 <input
-                  type="email"
-                  className="form-control"
-                  aria-describedby="emailHelp"
+                  readOnly
+                  type="text"
+                  id="nameField"
+                  name="nameField"
+                  className="inputField"
+                  value="codedashsign@gmail.com"
                 />
               </div>
+              <br />
               <div className="form-group">
-                <label htmlFor="message">Message</label>
-                <textarea className="form-control" rows="5"></textarea>
+                <label htmlFor="emailField">From:</label>
+                <input
+                  type="email"
+                  id="emailField"
+                  name="emailField"
+                  placeholder="Your Email"
+                  required
+                  className="inputField"
+                />
               </div>
-              <button type="submit" className="btn btn-primary">
-                Submit
-              </button>
+              <br />
+              <div className="form-group">
+                <label htmlFor="orgField">Name:</label>
+                <input
+                  type="text"
+                  id="orgField"
+                  name="orgField"
+                  required
+                  placeholder="Your Name"
+                  className="inputField"
+                />
+              </div>
+              <br />
+              <div className="form-group">
+                <label htmlFor="messageField">Message:</label>
+                <textarea
+                  id="messageField"
+                  name="messageField"
+                  required
+                  placeholder="Your Message"
+                  className="inputFieldMessage"
+                />
+              </div>
+              <br />
+              <div className="submitBtn">
+                <button type="submit" className="submitButton">
+                  Send Message
+                </button>
+              </div>
             </form>
-          </Col>
-          <Col xs={12} sm={12} md={12} lg={4} xl={4} className="contactInfo">
-            <p>BYE</p>
+            <br />
           </Col>
         </Row>
       </Container>

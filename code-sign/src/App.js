@@ -41,7 +41,15 @@ function App() {
               </>
             }
           />
-          <Route exact path="/contact" element={<Contact />} />
+          <Route
+            exact
+            path="/contact"
+            element={
+              <>
+                <Contact />
+              </>
+            }
+          />
         </Routes>
       </div>
     </BrowserRouter>
