@@ -10,7 +10,7 @@
   padding-top: 20px;
   padding-bottom: 20px;
   /* background-color: #d5dce0; */
-  background: linear-gradient(white 50%, #d5dce0 50%);
+  background: linear-gradient(rgb(42, 79, 100) 50%, #d5dce0 50%);
   /* background-image: url("../Images/arrows.png"), linear-gradient(white, #d5dce0); */
   /* background-size: cover;
   background-position: left bottom;

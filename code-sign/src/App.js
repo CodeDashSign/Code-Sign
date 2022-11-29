@@ -6,6 +6,7 @@ import Works from "./Components/Works";
 import Reviews from "./Components/Reviews";
 import Mission from "./Components/Mission";
 import NavbarCS from "./Components/NavbarCS";
+import NavbarExp from "./Components/NavbarExp";
 import Process from "./Components/Process";
 import Principles from "./Components/Principles";
 import Contact from "./Components/Contact";
@@ -21,7 +22,7 @@ function App() {
             exact
             element={
               <>
-                {/* <NavbarCS /> */}
+                <NavbarCS />
                 <Landing />
                 <Mission />
                 <Why />
@@ -35,6 +36,7 @@ function App() {
             exact
             element={
               <>
+                <NavbarExp />
                 <Team />
                 <Works />
                 <Reviews />
@@ -46,6 +48,7 @@ function App() {
             path="/contact"
             element={
               <>
+                <NavbarExp />
                 <Contact />
               </>
             }
