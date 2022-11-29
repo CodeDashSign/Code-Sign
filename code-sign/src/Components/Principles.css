@@ -18,13 +18,23 @@
   font-weight: 600;
   font-size: 35px;
   text-align: center;
+  padding-bottom: 5%;
+  
 }
 
-.rectangle {
-  width: 90vw;
-  height: 40vh;
-  background: lightgrey;
-  border-radius: 20px;
+.principleText {
+  font-family: "Quicksand", sans-serif;
+  color: white;
+  font-weight: 600;
+  font-size: 4vh;
+  text-shadow: 0 0 1vh black;
+  
+}
+
+.principlespicture {
+  width: 35vh;
+  padding-bottom: 3%;
+  
 }
 
 .principlesOrig {

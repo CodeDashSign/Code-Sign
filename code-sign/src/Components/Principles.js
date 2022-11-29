@@ -1,7 +1,7 @@
 import "./Principles.css";
-import { Container, Row } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import { useInView } from "react-intersection-observer";
-// import { Stage, Layer, Rect, Text, Circle, Line } from 'react-konva';
+import graph from "../Images/graph.png";
 
 function Principles() {
   const { ref: principlesRef, inView: principlesVisible } = useInView({
@@ -25,7 +25,18 @@ function Principles() {
           <Row className="title">
             <h1 className="principleTitle">What is Most Important to Us</h1>
           </Row>
-          <div className="rectangle"></div>
+            <Col>
+              <img className="principlespicture" src={graph} />
+              <Col > <div className="principleText"> Client Focused </div> </Col>
+            </Col>
+            <Col>
+              <img className="principlespicture" src={graph} />
+              <Col> <div className="principleText"> User Experience </div> </Col>
+            </Col>
+            <Col>
+              <img className="principlespicture" src={graph} />
+              <Col > <div className="principleText"> Adding Value </div> </Col>
+            </Col>
         </Row>
       </Container>
     </Container>
