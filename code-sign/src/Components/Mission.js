@@ -1,6 +1,7 @@
 import "./Mission.css";
 import { Container, Row, Col } from "react-bootstrap";
 import { useInView } from "react-intersection-observer";
+import Principles from "./Principles";
 
 function Mission() {
   const { ref: missionRef, inView: missionVisible } = useInView({
@@ -15,6 +16,10 @@ function Mission() {
             missionVisible ? "processAnim" : "missionOrig"
           }`}
         >
+          <Row className="title">
+            <h1 className="whyTitle">The Code-Sign Way</h1>
+            <hr className="titleLine" />
+          </Row>
           <Col
             sm={12}
             md={12}
@@ -34,6 +39,7 @@ function Mission() {
               digital presence.
             </p>
           </Col>
+          <Principles />
         </Row>
       </Container>
     </Container>

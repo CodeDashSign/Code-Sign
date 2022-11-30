@@ -16,7 +16,7 @@ function NavbarCS() {
   const dimensions = window;
   useEffect(() => {
     const handleScroll = () => {
-      const show = window.scrollY > 1.2 * dimensions.innerHeight;
+      const show = window.scrollY > 1.05 * dimensions.innerHeight;
       if (navRef.current !== show) {
         setNavBackground(show);
       }
@@ -46,13 +46,13 @@ function NavbarCS() {
           <Navbar.Brand href="/">
             <img
               src={Logo}
+              width={"30%"}
               alt=""
               style={{
-                textAlign: "start",
-                marginLeft: "0px",
-                height: "10%",
-                width: "10%",
+                paddingLeft: "0px",
+                paddingRight: "0px",
               }}
+              className="gx-0"
             />
           </Navbar.Brand>
           <Navbar.Toggle
@@ -65,16 +65,27 @@ function NavbarCS() {
               style={{ width: "50%", textAlign: "center", margin: "auto" }}
             >
               <Nav.Link
-                style={{ backgroundColor: "red", borderRadius: "15px" }}
                 active
-                href="#about"
+                href="/"
+                style={navLinkStyle}
+                className="navLink"
               >
                 Introduction
               </Nav.Link>
-              <Nav.Link active href="#services" style={navLinkStyle}>
+              <Nav.Link
+                active
+                href="/experience"
+                style={navLinkStyle}
+                className="navLink"
+              >
                 Previous Experiences
               </Nav.Link>
-              <Nav.Link active href="#contact" style={navLinkStyle}>
+              <Nav.Link
+                active
+                href="/contact"
+                style={navLinkStyle}
+                className="navLink"
+              >
                 Get in Touch
               </Nav.Link>
             </Nav>

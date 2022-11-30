@@ -26,7 +26,7 @@ function App() {
                 <Landing />
                 <Mission />
                 <Why />
-                <Principles />
+                {/* <Principles /> */}
                 <Process />
               </>
             }

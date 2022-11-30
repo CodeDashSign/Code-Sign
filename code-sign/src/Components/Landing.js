@@ -26,9 +26,13 @@ function Landing() {
         </Row>
         <Row>
           <div className={`${""} ${landingVisible ? "subTitle" : ""}`}>
-            <p>Together, we can upgrade your business, one pixel at a time</p>
-            <a href="#why" className="landingBtn">
-              Digitize Your Business With Us
+            <p>Digitize your business with us, one pixel at a time.</p>
+            <a href="#mission">
+              <div className="scroll-downs">
+                <div className="mousey">
+                  <div className="scroller"></div>
+                </div>
+              </div>
             </a>
           </div>
         </Row>
