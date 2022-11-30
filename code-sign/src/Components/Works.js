@@ -26,7 +26,7 @@ function Works() {
           </Row>
           <br />
           <br />
-          <Row className="row1">
+          <Row className="text-center">
             <div className="work">
               <div className="workImg">
                 <a
@@ -40,7 +40,7 @@ function Works() {
               </div>
             </div>
           </Row>
-          <Row className="row1">
+          <Row className="text-center">
             <div className="work">
               <div className="workImg">
                 <a
@@ -54,7 +54,7 @@ function Works() {
               </div>
             </div>
           </Row>
-          <Row className="row2">
+          <Row className="text-center">
             <Col lg={12} style={{ margin: "auto" }}>
               <div className="work">
                 <div className="workImg">
@@ -73,15 +73,17 @@ function Works() {
         </div>
         <br />
         <br />
-        <Button
-          href="contact"
-          className={`${"worksButtonOrig"} ${
-            worksVisible ? "worksButtonAnim" : "worksButtonOrig"
-          }`}
-        >
-          <span>Ready to Get in Touch?</span>
-          <span className="arrow"> &#8594;</span>
-        </Button>
+        <div className="text-center">
+          <Button
+            href="contact"
+            className={`${"worksButtonOrig"} ${
+              worksVisible ? "worksButtonAnim" : "worksButtonOrig"
+            }`}
+          >
+            <span>Ready to Get in Touch?</span>
+            <span className="arrow"> &#8594;</span>
+          </Button>
+        </div>
       </Container>
     </Container>
   );

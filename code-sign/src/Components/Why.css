@@ -6,7 +6,8 @@
   padding-top: 100px;
   /* padding-bottom: 100px; */
   /* background-color: #d5dce0; */
-  background-image: url("../Images/bars.png"), linear-gradient(#d5dce0, white);
+  background-image: url("../Images/Artboard_1.svg"),
+    linear-gradient(#d5dce0, white);
   background-size: cover;
   background-position: right bottom;
   background-repeat: no-repeat;
@@ -33,7 +34,7 @@
     padding-top: 50px;
     /* padding-bottom: 50px; */
     /* background-color: #d5dce0; */
-    background-image: url("../Images/bars_mobile.png"),
+    background-image: url("../Images/bars_mobile.svg"),
       linear-gradient(#d5dce0, white);
     background-size: cover;
     background-position: bottom right;

@@ -21,21 +21,22 @@ function NavbarExp() {
           transition: "0.3s ease-in-out",
         }}
       >
-        <Container fluid>
-          <Navbar.Brand href="/">
+        <Container fluid style={{ whiteSpace: "nowrap !important" }}>
+          <Navbar.Brand href="/" style={{ display: "inline-block !important" }}>
             <img
               src={Logo}
-              width={"30%"}
+              width={"40%"}
               alt=""
-              style={{
-                paddingLeft: "0px",
-                paddingRight: "0px",
-              }}
-              className="gx-0"
+              stle={{ marginRight: "0px" }}
             />
           </Navbar.Brand>
           <Navbar.Toggle
-            style={{ border: "none", outline: "none !important" }}
+            style={{
+              border: "none",
+              outline: "none !important",
+              paddingRight: "25px",
+              display: "inline-block !important",
+            }}
             aria-controls="responsive-navbar-nav"
             className="navbarToggle"
           />
@@ -54,7 +55,7 @@ function NavbarExp() {
                 active
                 href="/"
               >
-                Introduction
+                About Us
               </Nav.Link>
               <Nav.Link
                 className="navLink"
@@ -62,7 +63,7 @@ function NavbarExp() {
                 href="/experience"
                 style={navLinkStyle}
               >
-                Previous Experiences
+                Our Experience
               </Nav.Link>
               <Nav.Link
                 className="navLink"

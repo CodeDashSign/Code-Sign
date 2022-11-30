@@ -6,7 +6,7 @@ import Logo from "../Images/nav_logo.png";
 function NavbarCS() {
   const [navBackground, setNavBackground] = useState(false);
   var navLinkStyle = {
-    color: navBackground ? "white" : "black",
+    color: "white",
     fontFamily: "Urbanist, sans-serif",
     fontSize: "3vh",
     fontWeight: 400,
@@ -42,43 +42,38 @@ function NavbarCS() {
           transition: "0.3s ease-in-out",
         }}
       >
-        <Container fluid style={{ width: "95vw" }}>
-          <Navbar.Brand href="/">
+        <Container fluid>
+          <Navbar.Brand href="/" style={{ display: "inline-block !important" }}>
             <img
               src={Logo}
-              width={"30%"}
+              width={"40%"}
               alt=""
-              style={{
-                paddingLeft: "0px",
-                paddingRight: "0px",
-              }}
-              className="gx-0"
+              stle={{ marginRight: "0px" }}
             />
           </Navbar.Brand>
           <Navbar.Toggle
-            style={{ border: "none" }}
+            style={{
+              border: "none",
+              outline: "0 !important",
+              display: "inline-block !important",
+            }}
             aria-controls="responsive-navbar-nav"
+            className="navbarToggle"
           />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav
               className="me-auto justify-content-center"
               style={{ width: "50%", textAlign: "center", margin: "auto" }}
             >
-              <Nav.Link
-                active
-                href="/"
-                style={navLinkStyle}
-                className="navLink"
-              >
-                Introduction
+              <Nav.Link href="/" style={navLinkStyle} className="navLink">
+                About Us
               </Nav.Link>
               <Nav.Link
-                active
                 href="/experience"
                 style={navLinkStyle}
                 className="navLink"
               >
-                Previous Experiences
+                Our Experience
               </Nav.Link>
               <Nav.Link
                 active

@@ -145,15 +145,17 @@ function Process() {
             </Col>
           </Row>
         </div>
-        <Button
-          href="experience"
-          className={`${"meetTeamButtonOrig"} ${
-            processVisible ? "meetTeamButtonAnim" : "meetTeamButtonOrig"
-          }`}
-        >
-          <span>Ready to Meet Our Team?</span>
-          <span className="arrow"> &#8594;</span>
-        </Button>
+        <div className="text-center">
+          <Button
+            href="experience"
+            className={`${"meetTeamButtonOrig"} ${
+              processVisible ? "meetTeamButtonAnim" : "meetTeamButtonOrig"
+            }`}
+          >
+            <span>Ready to Meet Our Team?</span>
+            <span className="arrow"> &#8594;</span>
+          </Button>
+        </div>
       </Container>
     </Container>
   );

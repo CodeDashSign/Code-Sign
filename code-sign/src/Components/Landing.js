@@ -26,11 +26,13 @@ function Landing() {
         </Row>
         <Row>
           <div className={`${""} ${landingVisible ? "subTitle" : ""}`}>
-            <p>Digitize your business with us, one pixel at a time.</p>
+            <p className="text-center">
+              Digitize your business with us, one pixel at a time.
+            </p>
             <a href="#mission">
-              <div className="scroll-downs">
-                <div className="mousey">
-                  <div className="scroller"></div>
+              <div className="scrollAnim">
+                <div className="mouse">
+                  <div className="movingPiece"></div>
                 </div>
               </div>
             </a>

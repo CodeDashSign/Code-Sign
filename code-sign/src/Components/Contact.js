@@ -6,6 +6,7 @@ import Email from "../Images/email.svg";
 
 const Contact = () => {
   const [submissionStatus, submission] = useState(false);
+  const [errStatus, errorSwitch] = useState(false);
 
   const handleClose = () => {
     submission(false);
@@ -18,32 +19,37 @@ const Contact = () => {
     const name = document.getElementById("nameField").value;
     const message = document.getElementById("messageField").value;
 
-    const webhookBody = {
-      embeds: [
-        {
-          title: "Contact Form Submission",
-          fields: [
-            { name: "Sender", value: name },
-            { name: "Email", value: email },
-            { name: "Message", value: message },
-          ],
+    try {
+      const webhookBody = {
+        content: `**@everyone New form submission:\n**`,
+        embeds: [
+          {
+            title: "Contact Form Submission",
+            fields: [
+              { name: "Sender", value: name },
+              { name: "Email", value: email },
+              { name: "Message", value: message },
+            ],
+          },
+        ],
+      };
+
+      const webhookUrl =
+        "https://discord.com/api/webhooks/1047262894900916294/6cduE0Nut5lFC3_S6bauMvmHqofYiGPHEF7lMBNUOIDBPFUl3bI7mosnIAmE_aY5-LZg";
+
+      const response = await fetch(webhookUrl, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
         },
-      ],
-    };
+        body: JSON.stringify(webhookBody),
+      });
 
-    const webhookUrl =
-      "https://discord.com/api/webhooks/1047262894900916294/6cduE0Nut5lFC3_S6bauMvmHqofYiGPHEF7lMBNUOIDBPFUl3bI7mosnIAmE_aY5-LZg";
-
-    const response = await fetch(webhookUrl, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(webhookBody),
-    });
-
-    if (response.ok) {
-      submission(true);
+      if (response.ok) {
+        submission(true);
+      }
+    } catch (err) {
+      errorSwitch(true);
     }
   }
 
@@ -65,6 +71,25 @@ const Contact = () => {
                   onClick={handleClose}
                 >
                   <span>Sounds Good</span>
+                  <span className="checkMark"> &#10004;</span>
+                </Button>
+              </Modal.Body>
+            </Modal>
+          )}
+          {errStatus && (
+            <Modal show={true} className="modalSuccess" centered size="lg">
+              <Modal.Body className="modalMain text-center">
+                <h1 className="contactTitle2">
+                  Unable to send the message, please disable any extensions
+                  active or directly email us using our email address.
+                </h1>
+                <br />
+                <Button
+                  href="contact"
+                  className="contactModalClose"
+                  onClick={handleClose}
+                >
+                  <span>Okay</span>
                   <span className="checkMark"> &#10004;</span>
                 </Button>
               </Modal.Body>
@@ -123,9 +148,11 @@ const Contact = () => {
                 </label>
                 <input
                   type="email"
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                  title="Please enter a valid email address"
                   id="emailField"
                   name="emailField"
-                  placeholder="Your Email"
+                  placeholder="&#9998; Your Email"
                   required
                   className="inputField"
                 />
@@ -140,7 +167,8 @@ const Contact = () => {
                   id="nameField"
                   name="nameField"
                   required
-                  placeholder="Your Name"
+                  title="Please enter your name"
+                  placeholder="&#9998; Your Name"
                   className="inputField"
                 />
               </div>
@@ -153,7 +181,8 @@ const Contact = () => {
                   id="messageField"
                   name="messageField"
                   required
-                  placeholder="Your Message"
+                  title="Please enter a message for us"
+                  placeholder="&#9998; Your Message"
                   className="inputFieldMessage"
                 />
               </div>

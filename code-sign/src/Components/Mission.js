@@ -32,7 +32,7 @@ function Mission() {
             }}
             className="m-auto"
           >
-            <p className="missionText">
+            <p className="missionText text-xl-center text-lg-center text-md-left text-sm-left text-xs-left">
               Code-Sign was created by a couple of ambitious university students
               who wanted to create clean and modern websites to provide
               businesses and individuals the edge they needed to level up their

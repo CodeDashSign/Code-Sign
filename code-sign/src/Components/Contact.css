@@ -161,6 +161,12 @@
 .contactModalClose:hover {
   background-color: rgb(42, 79, 100);
   box-shadow: none;
+  color: white;
+}
+
+.contactModalClose:active {
+  background-color: rgb(42, 79, 100) !important;
+  box-shadow: none;
 }
 
 .checkMark {
