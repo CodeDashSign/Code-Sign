@@ -7,6 +7,7 @@ function NavbarExp() {
     fontFamily: "Urbanist, sans-serif",
     fontSize: "3vh",
     fontWeight: 400,
+    paddingBotton: "10px",
   };
   return (
     <>
@@ -22,39 +23,53 @@ function NavbarExp() {
       >
         <Container fluid>
           <Navbar.Brand href="/">
-            <a>
-              <img
-                src={Logo}
-                width={"30%"}
-                alt=""
-                style={{
-                  paddingLeft: "0px",
-                  paddingRight: "0px",
-                }}
-                className="gx-0"
-              />
-            </a>
+            <img
+              src={Logo}
+              width={"30%"}
+              alt=""
+              style={{
+                paddingLeft: "0px",
+                paddingRight: "0px",
+              }}
+              className="gx-0"
+            />
           </Navbar.Brand>
           <Navbar.Toggle
-            style={{ border: "none" }}
+            style={{ border: "none", outline: "none !important" }}
             aria-controls="responsive-navbar-nav"
+            className="navbarToggle"
           />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav
               className="me-auto justify-content-center"
-              style={{ width: "50%", textAlign: "center", margin: "auto" }}
+              style={{
+                width: "50%",
+                textAlign: "center",
+                margin: "auto",
+              }}
             >
               <Nav.Link
-                style={{ backgroundColor: "red", borderRadius: "15px" }}
+                style={navLinkStyle}
+                className="navLink"
                 active
-                href="#about"
+                href="/"
               >
                 Introduction
               </Nav.Link>
-              <Nav.Link active href="#services" style={navLinkStyle}>
+              <Nav.Link
+                className="navLink"
+                active
+                href="/experience"
+                style={navLinkStyle}
+              >
                 Previous Experiences
               </Nav.Link>
-              <Nav.Link active href="#contact" style={navLinkStyle}>
+              <Nav.Link
+                className="navLink"
+                active
+                href="/contact"
+                style={navLinkStyle}
+              >
                 Get in Touch
               </Nav.Link>
             </Nav>

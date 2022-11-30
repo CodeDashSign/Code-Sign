@@ -1,0 +1,17 @@
+.navLink {
+  text-decoration: none;
+  background-image: linear-gradient(#4ba3c3, #4ba3c3),
+    linear-gradient(transparent, transparent);
+  background-size: 0% 2px, auto;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  transition: all 0.2s ease-out;
+}
+
+.navLink:hover {
+  background-size: 100% 2px, auto;
+}
+
+.navbarToggle:focus {
+  outline: none !important;
+}

@@ -1,13 +1,75 @@
 import "./Contact.css";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Modal, Button } from "react-bootstrap";
+import { useState } from "react";
 import Location from "../Images/location-dot.svg";
 import Email from "../Images/email.svg";
 
 const Contact = () => {
+  const [submissionStatus, submission] = useState(false);
+
+  const handleClose = () => {
+    submission(false);
+    document.getElementsByTagName("body").removeClass("modal-open");
+  };
+
+  async function sendDiscord(ev) {
+    ev.preventDefault();
+    const email = document.getElementById("emailField").value;
+    const name = document.getElementById("nameField").value;
+    const message = document.getElementById("messageField").value;
+
+    const webhookBody = {
+      embeds: [
+        {
+          title: "Contact Form Submission",
+          fields: [
+            { name: "Sender", value: name },
+            { name: "Email", value: email },
+            { name: "Message", value: message },
+          ],
+        },
+      ],
+    };
+
+    const webhookUrl =
+      "https://discord.com/api/webhooks/1047262894900916294/6cduE0Nut5lFC3_S6bauMvmHqofYiGPHEF7lMBNUOIDBPFUl3bI7mosnIAmE_aY5-LZg";
+
+    const response = await fetch(webhookUrl, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(webhookBody),
+    });
+
+    if (response.ok) {
+      submission(true);
+    }
+  }
+
   return (
     <Container fluid className="contactParent">
       <Container fluid className="contact" id="contact">
         <Row className="align-items-center">
+          {submissionStatus && (
+            <Modal show={true} className="modalSuccess" centered size="lg">
+              <Modal.Body className="modalMain text-center">
+                <h1 className="contactTitle2">
+                  Thank you for submitting our contact form! We will get back to
+                  you soon.
+                </h1>
+                <br />
+                <Button
+                  href="contact"
+                  className="contactModalClose"
+                  onClick={handleClose}
+                >
+                  <span>Sounds Good</span>
+                  <span className="checkMark"> &#10004;</span>
+                </Button>
+              </Modal.Body>
+            </Modal>
+          )}
           <Col xs={12} sm={5} md={5} lg={5} xl={5}>
             <Row>
               <h1 className="contactTitle">
@@ -37,24 +99,28 @@ const Contact = () => {
             <br />
             <form
               id="contact-form"
-              //   onSubmit={this.handleSubmit.bind(this)}
+              onSubmit={sendDiscord}
               method="POST"
               className="text-start"
             >
               <div className="form-group">
-                <label htmlFor="nameField">To: </label>
+                <label className="formLabel" htmlFor="nameField">
+                  To:
+                </label>
                 <input
                   readOnly
                   type="text"
-                  id="nameField"
-                  name="nameField"
+                  id="toField"
+                  name="toField"
                   className="inputField"
                   value="codedashsign@gmail.com"
                 />
               </div>
               <br />
               <div className="form-group">
-                <label htmlFor="emailField">From:</label>
+                <label className="formLabel" htmlFor="emailField">
+                  From:
+                </label>
                 <input
                   type="email"
                   id="emailField"
@@ -66,11 +132,13 @@ const Contact = () => {
               </div>
               <br />
               <div className="form-group">
-                <label htmlFor="orgField">Name:</label>
+                <label className="formLabel" htmlFor="orgField">
+                  Name:
+                </label>
                 <input
                   type="text"
-                  id="orgField"
-                  name="orgField"
+                  id="nameField"
+                  name="nameField"
                   required
                   placeholder="Your Name"
                   className="inputField"
@@ -78,7 +146,9 @@ const Contact = () => {
               </div>
               <br />
               <div className="form-group">
-                <label htmlFor="messageField">Message:</label>
+                <label className="formLabel" htmlFor="messageField">
+                  Message:
+                </label>
                 <textarea
                   id="messageField"
                   name="messageField"
