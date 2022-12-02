@@ -1,7 +1,7 @@
 import "./NavbarCS.css";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { useState, useRef, useEffect } from "react";
-import Logo from "../Images/nav_logo.png";
+import Logo from "../Images/textonly_logo.svg";
 
 function NavbarCS() {
   const [navBackground, setNavBackground] = useState(false);
@@ -46,7 +46,7 @@ function NavbarCS() {
           <Navbar.Brand href="/" style={{ display: "inline-block !important" }}>
             <img
               src={Logo}
-              width={"40%"}
+              width={"50%"}
               alt=""
               stle={{ marginRight: "0px" }}
             />
