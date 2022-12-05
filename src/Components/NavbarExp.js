@@ -1,6 +1,6 @@
 import "./NavbarCS.css";
 import { Container, Nav, Navbar } from "react-bootstrap";
-import Logo from "../Images/nav_logo.png";
+import Logo from "../Images/textonly_logo.svg";
 
 function NavbarExp() {
   var navLinkStyle = {
@@ -25,7 +25,7 @@ function NavbarExp() {
           <Navbar.Brand href="/" style={{ display: "inline-block !important" }}>
             <img
               src={Logo}
-              width={"40%"}
+              width={"50%"}
               alt=""
               stle={{ marginRight: "0px" }}
             />

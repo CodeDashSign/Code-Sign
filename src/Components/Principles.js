@@ -1,8 +1,8 @@
 import "./Principles.css";
 import { Row, Col } from "react-bootstrap";
-import Mobile from "../Images/mobile.svg";
-import Handshake from "../Images/handshake.svg";
-import Money from "../Images/money.svg";
+import Mobile from "../Images/ui.svg";
+import Handshake from "../Images/shake.svg";
+import Money from "../Images/rocket.svg";
 
 function Principles() {
   return (

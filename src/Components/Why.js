@@ -1,5 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
-import Graph from "../Images/graph.jpg";
+import Graph from "../Images/growth.svg";
 import "./Why.css";
 import { useInView } from "react-intersection-observer";
 
@@ -81,7 +81,7 @@ function Why() {
               <img
                 src={Graph}
                 alt=""
-                style={{ borderRadius: "30px" }}
+                style={{ borderRadius: "30px", width: "100%" }}
                 className="d-none d-lg-block mx-auto img-fluid"
               />
             </Col>

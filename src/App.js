@@ -8,7 +8,6 @@ import Mission from "./Components/Mission";
 import NavbarCS from "./Components/NavbarCS";
 import NavbarExp from "./Components/NavbarExp";
 import Process from "./Components/Process";
-import Principles from "./Components/Principles";
 import Contact from "./Components/Contact";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
