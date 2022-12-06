@@ -111,11 +111,11 @@ const Contact = () => {
           <Col xs={12} sm={1} md={1} lg={1} xl={1}></Col>
           <Col xs={12} sm={6} md={6} lg={6} xl={6} className="contactForm">
             <p className="contactDetails text-start">
-              <img src={Location} alt="" className="contactDetailsImg" />
+              <img src={Location} alt="location-pin-icon" className="contactDetailsImg" />
               &nbsp;&nbsp;&nbsp; Calgary, AB, Canada
             </p>
             <p className="contactDetails text-start">
-              <img src={Email} alt="" className="contactDetailsImg" />
+              <img src={Email} alt="email-icon" className="contactDetailsImg" />
               &nbsp;&nbsp;&nbsp;
               <a className="email" href="mailto:codedashsign@gmail.com">
                 codedashsign@gmail.com

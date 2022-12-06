@@ -47,7 +47,7 @@ function NavbarCS() {
             <img
               src={Logo}
               width={"50%"}
-              alt=""
+              alt="navbar-landing-company-logo"
               stle={{ marginRight: "0px" }}
             />
           </Navbar.Brand>

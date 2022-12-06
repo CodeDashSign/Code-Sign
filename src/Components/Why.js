@@ -80,7 +80,7 @@ function Why() {
             >
               <img
                 src={Graph}
-                alt=""
+                alt="watering-plant-img"
                 style={{ borderRadius: "30px", width: "100%" }}
                 className="d-none d-lg-block mx-auto img-fluid"
               />

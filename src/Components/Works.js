@@ -35,7 +35,7 @@ function Works() {
                   rel="noreferrer"
                   className="worksHover"
                 >
-                  <img src={shringar} alt="" className="productImg" />
+                  <img src={shringar} alt="shringar-website-preview" className="productImg" />
                 </a>
               </div>
             </div>
@@ -49,7 +49,7 @@ function Works() {
                   rel="noreferrer"
                   className="worksHover"
                 >
-                  <img src={sneak} alt="" className="productImg" />
+                  <img src={sneak} alt="sneakerseek-website-preview" className="productImg" />
                 </a>
               </div>
             </div>
@@ -64,7 +64,7 @@ function Works() {
                     rel="noreferrer"
                     className="worksHover"
                   >
-                    <img src={ac} alt="" className="productImg" />
+                    <img src={ac} alt="aucci-website-preview" className="productImg" />
                   </a>
                 </div>
               </div>

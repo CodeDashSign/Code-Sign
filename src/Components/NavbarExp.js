@@ -26,7 +26,7 @@ function NavbarExp() {
             <img
               src={Logo}
               width={"50%"}
-              alt=""
+              alt="navbar-experience-company-logo"
               stle={{ marginRight: "0px" }}
             />
           </Navbar.Brand>

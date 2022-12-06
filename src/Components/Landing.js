@@ -18,7 +18,7 @@ function Landing() {
         >
           <img
             src={MainLogo}
-            alt=""
+            alt="main-company-logo"
             className={`${"mx-auto img-fluid landingLogo"} ${
               landingVisible ? "imgLanding" : ""
             }`}
