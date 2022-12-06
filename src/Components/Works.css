@@ -6,6 +6,22 @@
   background: url("../Images/bckg1.png"), linear-gradient(#d5dce0, white);
   background-repeat: repeat;
   font-family: inter;
+  background-size: contain;
+  animation: animationMotion 10s infinite;
+}
+
+@keyframes animationMotion {
+  0% {
+    background-position: 0% 0px;
+  }
+
+  50% {
+    background-position: 0% 10%;
+  }
+
+  100% {
+    background-position: 0% 0px;
+  }
 }
 
 .Works {

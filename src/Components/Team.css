@@ -61,15 +61,14 @@
   color: black;
 }
 
-.teamOrig {
+.TeamOrig {
   opacity: 0;
 }
 
-.teamAnim {
-  animation-name: Fade;
+.TeamAnim {
+  animation: Fade;
   animation-duration: 1.5s;
   animation-fill-mode: forwards;
-  -webkit-animation: Fade 1.5s forwards;
 }
 
 @keyframes Fade {

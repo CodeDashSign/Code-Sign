@@ -4,11 +4,22 @@ import Nishant from "../Images/Team/nishant.jpg";
 import Div from "../Images/Team/div.jpg";
 import Anish from "../Images/Team/anish.jpg";
 import Kenneth from "../Images/Team/kenneth.png";
+import { useInView } from "react-intersection-observer";
 
 function Team() {
+  const { ref: teamRef, inView: teamVisible } = useInView({
+    threshold: 0.2,
+    triggerOnce: true,
+  });
   return (
-    <Container fluid className="TeamParent">
-      <Container fluid className="Team" id="Team">
+    <Container fluid className="TeamParent" ref={teamRef}>
+      <Container
+        fluid
+        className={`${"Team TeamOrig"} ${
+          teamVisible ? "TeamAnim" : "TeamOrig"
+        }`}
+        id="Team"
+      >
         <Row className="title">
           <h1 className="text-start TeamTitle">Meet Our Team</h1>
           <hr />
@@ -97,7 +108,7 @@ function Team() {
               </div>
               <h4>Anish Singla</h4>
               <h6>Full-Stack Developer</h6>
-              <h6>Computer Science @ University of Toronto </h6>
+              <h6>Data Science @ University of Toronto </h6>
             </a>
           </Col>
         </Row>
