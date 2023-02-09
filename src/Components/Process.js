@@ -12,7 +12,7 @@ function Process() {
       <Container fluid className="process" id="process" ref={processRef}>
         <Row className="title">
           <h1 className="whyTitle">The Code-Sign Process</h1>
-          <hr className="titleLine" />
+          <hr className={`${""} ${processVisible ? "hrLineAnim" : ""}`} />
         </Row>
         <br />
         <br />

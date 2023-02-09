@@ -1,15 +1,65 @@
 .principlesRow {
   padding-top: 40px;
   margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .principlesCol {
   padding-top: 0;
 }
 
+.principlesCol:hover .content {
+  transform: translateY(0%);
+}
+
+.principlesCol:hover .principleText {
+  opacity: 1;
+}
+
+.content {
+  transition: 0.5s;
+  transform: translateY(5%);
+}
+
+.trial {
+  background: #2a4f641a;
+  backdrop-filter: blur(20px) saturate(180%);
+  border: 2px solid transparent;
+  border-radius: 15px;
+  aspect-ratio: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.principleText {
+  font-family: "Quicksand", sans-serif;
+  color: black;
+  font-weight: 600;
+  font-size: 4vh;
+  padding-left: 2%;
+  opacity: 0;
+  transition: 0.5s;
+  /* text-shadow: 0 0 1vh black; */
+}
+
 @media screen and (max-width: 450px) {
   .principlesCol {
     padding-top: 40px;
+  }
+
+  .principleText {
+    opacity: 1;
+    font-size: 3vh;
+    /* text-shadow: 0 0 1vh black; */
+  }
+
+  .content {
+    transform: translateY(0%);
   }
 }
 
@@ -20,15 +70,6 @@
   font-size: 35px;
   text-align: center;
   padding-bottom: 5%;
-}
-
-.principleText {
-  font-family: "Quicksand", sans-serif;
-  color: black;
-  font-weight: 600;
-  font-size: 4vh;
-  padding-left: 2%;
-  /* text-shadow: 0 0 1vh black; */
 }
 
 .principlespicture {

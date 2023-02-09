@@ -49,6 +49,7 @@ a {
   .WorksParent {
     background: url("../Images/square_mobile.png"),
       linear-gradient(#d5dce0, white);
+    background-size: 100vw auto;
   }
 
   .productImg {

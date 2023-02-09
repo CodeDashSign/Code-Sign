@@ -12,9 +12,9 @@ function Why() {
     <Container fluid className="whyParent">
       <Container fluid id="why" className="why" ref={whyRef}>
         <div className={`${"whyOrig"} ${whyVisible ? "whyAnim" : "whyOrig"}`}>
-          <Row className="title">
+          <Row className="title2">
             <h1 className="whyTitle">A Website To Fuel Your Ambitions</h1>
-            <hr className="titleLine" />
+            <hr className={`${""} ${whyVisible ? "hrLineAnim" : ""}`} />
           </Row>
           <br />
           <br />

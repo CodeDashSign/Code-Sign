@@ -16,9 +16,9 @@ function Mission() {
             missionVisible ? "processAnim" : "missionOrig"
           }`}
         >
-          <Row className="title">
+          <Row className="title2">
             <h1 className="whyTitle">The Code-Sign Way</h1>
-            <hr className="titleLine" />
+            <hr className={`${""} ${missionVisible ? "hrLineAnim" : ""}`} />
           </Row>
           <Col
             sm={12}
@@ -32,7 +32,7 @@ function Mission() {
             }}
             className="m-auto"
           >
-            <p className="missionText text-xl-center text-lg-center text-md-left text-sm-left text-xs-left">
+            <p className="missionText text-xl-left text-lg-left text-md-left text-sm-left text-xs-left">
               Code-Sign was created by a couple of ambitious university students
               who wanted to create clean and modern websites to provide
               businesses and individuals the edge they needed to level up their

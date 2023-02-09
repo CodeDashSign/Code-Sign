@@ -7,7 +7,7 @@ import { useInView } from "react-intersection-observer";
 
 function Works() {
   const { ref: worksRef, inView: worksVisible } = useInView({
-    threshold: 0.2,
+    threshold: 0.3,
     triggerOnce: true,
   });
   return (
@@ -22,7 +22,7 @@ function Works() {
             <h1 className="text-start WorksTitle">
               Some of Our Previous Works
             </h1>
-            <hr />
+            <hr className={`${""} ${worksVisible ? "hrLineAnim" : ""}`} />
           </Row>
           <br />
           <br />

@@ -22,7 +22,7 @@ function Team() {
       >
         <Row className="title">
           <h1 className="text-start TeamTitle">Meet Our Team</h1>
-          <hr />
+          <hr className={`${""} ${teamVisible ? "hrLineAnim" : ""}`} />
         </Row>
         <br />
         <br />

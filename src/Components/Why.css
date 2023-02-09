@@ -13,15 +13,6 @@
   background-repeat: no-repeat;
 }
 
-.title > hr {
-  width: 20vw;
-  border: none;
-  height: 5px;
-  /* Set the hr color */
-  color: #0054a1; /* old IE */
-  background-color: #0054a1; /* Modern Browsers */
-}
-
 .whySection > h2 {
   font-family: "Quicksand", sans-serif;
   font-weight: 600;
