@@ -43,9 +43,9 @@ function NavbarCS() {
         }}
       >
         <Container fluid>
-          <Navbar.Brand href="/" style={{ display: "inline-block !important" }}>
+          {/* <Navbar.Brand href="/" style={{ display: "inline-block !important" }}>
             <img src={Logo} width={"10%"} alt="navbar-landing-company-logo" />
-          </Navbar.Brand>
+          </Navbar.Brand> */}
           <Navbar.Toggle
             style={{
               border: "none",

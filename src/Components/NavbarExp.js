@@ -14,7 +14,7 @@ function NavbarExp() {
       <Navbar
         collapseOnSelect
         className="navbarMainTag fixed-top"
-        expand="false"
+        expand="lg"
         variant="dark"
         style={{
           backgroundColor: "rgb(42, 79, 100)",
@@ -22,14 +22,14 @@ function NavbarExp() {
         }}
       >
         <Container fluid style={{ whiteSpace: "nowrap !important" }}>
-          <Navbar.Brand href="/" style={{ display: "inline-block !important" }}>
+          {/* <Navbar.Brand href="/" style={{ display: "inline-block !important" }}>
             <img
               src={Logo}
               width={"50%"}
               alt="navbar-experience-company-logo"
               stle={{ marginRight: "0px" }}
             />
-          </Navbar.Brand>
+          </Navbar.Brand> */}
           <Navbar.Toggle
             style={{
               border: "none",

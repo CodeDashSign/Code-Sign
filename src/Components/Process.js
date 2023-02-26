@@ -11,7 +11,7 @@ function Process() {
     <Container fluid className="processParent">
       <Container fluid className="process" id="process" ref={processRef}>
         <Row className="title">
-          <h1 className="whyTitle">The Axiom Process</h1>
+          <h1 className="whyTitle">The Code-Sign Process</h1>
           <hr className={`${""} ${processVisible ? "hrLineAnim" : ""}`} />
         </Row>
         <br />

@@ -17,7 +17,7 @@ function Mission() {
           }`}
         >
           <Row className="title2">
-            <h1 className="whyTitle">The Axiom Way</h1>
+            <h1 className="whyTitle">The Code-Sign Way</h1>
             <hr className={`${""} ${missionVisible ? "hrLineAnim" : ""}`} />
           </Row>
           <Col
