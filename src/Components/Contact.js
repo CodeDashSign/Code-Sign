@@ -3,6 +3,8 @@ import { Container, Row, Col, Modal, Button } from "react-bootstrap";
 import { useState } from "react";
 import Location from "../Images/location-dot.svg";
 import Email from "../Images/email.svg";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const [submissionStatus, submission] = useState(false);
@@ -12,46 +14,27 @@ const Contact = () => {
     submission(false);
     document.getElementsByTagName("body").removeClass("modal-open");
   };
+  const form = useRef();
 
-  async function sendDiscord(ev) {
-    ev.preventDefault();
-    const email = document.getElementById("emailField").value;
-    const name = document.getElementById("nameField").value;
-    const message = document.getElementById("messageField").value;
+  const sendEmail = (e) => {
+    e.preventDefault(); // prevents the page from reloading when you hit “Send”
 
-    try {
-      const webhookBody = {
-        content: `**@everyone New form submission:\n**`,
-        embeds: [
-          {
-            title: "Contact Form Submission",
-            fields: [
-              { name: "Sender", value: name },
-              { name: "Email", value: email },
-              { name: "Message", value: message },
-            ],
-          },
-        ],
-      };
-
-      const webhookUrl =
-        "https://discord.com/api/webhooks/1047262894900916294/6cduE0Nut5lFC3_S6bauMvmHqofYiGPHEF7lMBNUOIDBPFUl3bI7mosnIAmE_aY5-LZg";
-
-      const response = await fetch(webhookUrl, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
+    emailjs
+      .sendForm(
+        "service_zdpvyhm",
+        "template_mifjt2f",
+        form.current,
+        "YbCymj5NkXD1Q_iMX"
+      )
+      .then(
+        (result) => {
+          submission(true);
         },
-        body: JSON.stringify(webhookBody),
-      });
-
-      if (response.ok) {
-        submission(true);
-      }
-    } catch (err) {
-      errorSwitch(true);
-    }
-  }
+        (error) => {
+          errorSwitch(true);
+        }
+      );
+  };
 
   return (
     <Container fluid className="contactParent">
@@ -128,7 +111,8 @@ const Contact = () => {
             <br />
             <form
               id="contact-form"
-              onSubmit={sendDiscord}
+              ref={form}
+              onSubmit={sendEmail}
               method="POST"
               className="text-start"
             >
