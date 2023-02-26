@@ -5,6 +5,7 @@
 .processParent {
   padding-top: 100px;
   padding-bottom: 100px;
+  background: linear-gradient(white, #d5dce0);
 }
 
 .processRect {

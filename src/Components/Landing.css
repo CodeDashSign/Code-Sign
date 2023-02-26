@@ -2,6 +2,10 @@
   background-color: #2a4f64;
   height: 100vh;
   display: table;
+  background-image: url("../Images/wave.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
 }
 
 .landing {

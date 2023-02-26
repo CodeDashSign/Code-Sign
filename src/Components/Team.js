@@ -53,7 +53,7 @@ function Team() {
             className="sectionBox text-center"
           >
             <a
-              href="https://nishant-sr.xyz/"
+              href="https://www.linkedin.com/in/nishant-sr/"
               target={"_blank"}
               rel="noreferrer"
             >

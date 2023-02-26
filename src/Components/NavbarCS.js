@@ -33,7 +33,7 @@ function NavbarCS() {
       <Navbar
         collapseOnSelect
         className="navbarMainTag fixed-top"
-        expand="false"
+        expand="lg"
         variant="dark"
         // style={{ backgroundColor: "rgb(42, 79, 100)" }}
         style={{
@@ -44,7 +44,7 @@ function NavbarCS() {
       >
         <Container fluid>
           <Navbar.Brand href="/" style={{ display: "inline-block !important" }}>
-            <img src={Logo} width={"50%"} alt="navbar-landing-company-logo" />
+            <img src={Logo} width={"10%"} alt="navbar-landing-company-logo" />
           </Navbar.Brand>
           <Navbar.Toggle
             style={{

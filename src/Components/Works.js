@@ -47,12 +47,7 @@ function Works() {
           <Row className="text-center">
             <div className="work">
               <div className="workImg">
-                <a
-                  href="https://sneakerseek.herokuapp.com/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="worksHover"
-                >
+                <a target="_blank" rel="noreferrer" className="worksHover">
                   <img
                     src={sneak}
                     alt="sneakerseek-website-preview"
@@ -66,12 +61,7 @@ function Works() {
             <Col lg={12} style={{ margin: "auto" }}>
               <div className="work">
                 <div className="workImg">
-                  <a
-                    href="https://aucciapplication.herokuapp.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="worksHover"
-                  >
+                  <a rel="noreferrer" className="worksHover">
                     <img
                       src={ac}
                       alt="aucci-website-preview"

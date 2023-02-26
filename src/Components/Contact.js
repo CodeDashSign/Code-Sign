@@ -98,7 +98,7 @@ const Contact = () => {
           <Col xs={12} sm={5} md={5} lg={5} xl={5}>
             <Row>
               <h1 className="contactTitle">
-                THIS IS YOUR <b className="mainPoints2">SIGN</b> TO LEVEL UP
+                THIS IS YOUR SIGN TO <b className="mainPoints2">LEVEL UP</b>{" "}
                 YOUR DIGITAL PRESENCE.
               </h1>
               <br />
@@ -111,7 +111,11 @@ const Contact = () => {
           <Col xs={12} sm={1} md={1} lg={1} xl={1}></Col>
           <Col xs={12} sm={6} md={6} lg={6} xl={6} className="contactForm">
             <p className="contactDetails text-start">
-              <img src={Location} alt="location-pin-icon" className="contactDetailsImg" />
+              <img
+                src={Location}
+                alt="location-pin-icon"
+                className="contactDetailsImg"
+              />
               &nbsp;&nbsp;&nbsp; Calgary, AB, Canada
             </p>
             <p className="contactDetails text-start">
