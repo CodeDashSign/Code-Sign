@@ -1,7 +1,7 @@
 import "./NavbarCS.css";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { useState, useRef, useEffect } from "react";
-import Logo from "../Images/textonly_logo.svg";
+import Logo from "../Images/Axiom_main_logo.svg";
 
 function NavbarCS() {
   const [navBackground, setNavBackground] = useState(false);
@@ -43,9 +43,9 @@ function NavbarCS() {
         }}
       >
         <Container fluid>
-          {/* <Navbar.Brand href="/" style={{ display: "inline-block !important" }}>
+          <Navbar.Brand href="/" style={{ display: "inline-block !important" }}>
             <img src={Logo} width={"10%"} alt="navbar-landing-company-logo" />
-          </Navbar.Brand> */}
+          </Navbar.Brand>
           <Navbar.Toggle
             style={{
               border: "none",

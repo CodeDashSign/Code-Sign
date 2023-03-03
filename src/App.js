@@ -11,7 +11,22 @@ import Process from "./Components/Process";
 import Contact from "./Components/Contact";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
+function preloadImage() {
+  const imgURLs = [
+    "./Images/Team/anish.jpg",
+    "./Images/Team/div.jpg",
+    "./Images/Team/kenneth.jpg",
+    "./Images/Team/nishant.jpg",
+  ];
+  imgURLs.forEach((url) => {
+    const image = new Image();
+    image.src = url;
+  });
+}
+
 function App() {
+  preloadImage();
+
   return (
     <BrowserRouter>
       <div className="App">

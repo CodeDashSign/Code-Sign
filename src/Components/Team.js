@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Nishant from "../Images/Team/nishant.jpg";
 import Div from "../Images/Team/div.jpg";
 import Anish from "../Images/Team/anish.jpg";
-import Kenneth from "../Images/Team/kenneth.png";
+import Kenneth from "../Images/Team/kenneth.jpg";
 import { useInView } from "react-intersection-observer";
 
 function Team() {
@@ -40,7 +40,7 @@ function Team() {
                 <img src={Div} alt="Divyansh Goyal" className="profileImg" />
               </div>
               <h4>Divyansh Goyal</h4>
-              <h6>Full-Stack Developer, Graphic Designer</h6>
+              <h6>Full-Stack Developer</h6>
               <h6>Software Engineering & Business @ University of Calgary</h6>
             </a>
           </Col>
@@ -65,7 +65,7 @@ function Team() {
                 />
               </div>
               <h4>Nishant Srinivasan</h4>
-              <h6>Full-Stack Developer, Graphic Designer</h6>
+              <h6>Graphic Designer</h6>
               <h6>Computer Science @ University of British Columbia</h6>
             </a>
           </Col>
@@ -86,7 +86,7 @@ function Team() {
                 <img src={Kenneth} alt="Kenneth Lai" className="profileImg" />
               </div>
               <h4>Kenneth Lai</h4>
-              <h6>Marketing, Graphic Designer</h6>
+              <h6>Marketing</h6>
               <h6>Accounting @ Western University </h6>
             </a>
           </Col>
@@ -107,7 +107,7 @@ function Team() {
                 <img src={Anish} alt="Anish Singla" className="profileImg" />
               </div>
               <h4>Anish Singla</h4>
-              <h6>Full-Stack Developer</h6>
+              <h6>Back-End Developer</h6>
               <h6>Data Science @ University of Toronto </h6>
             </a>
           </Col>

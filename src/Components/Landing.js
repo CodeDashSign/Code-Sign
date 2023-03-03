@@ -1,5 +1,5 @@
 import { Container, Row } from "react-bootstrap";
-import MainLogo from "../Images/white_logo.png";
+import MainLogo from "../Images/Axiom_main_logo.svg";
 import "./Landing.css";
 import { useInView } from "react-intersection-observer";
 

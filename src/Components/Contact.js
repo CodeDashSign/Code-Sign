@@ -53,7 +53,7 @@ const Contact = () => {
                   className="contactModalClose"
                   onClick={handleClose}
                 >
-                  <span>Sounds Good</span>
+                  <span>Confirm</span>
                   <span className="checkMark"> &#10004;</span>
                 </Button>
               </Modal.Body>
@@ -99,13 +99,13 @@ const Contact = () => {
                 alt="location-pin-icon"
                 className="contactDetailsImg"
               />
-              &nbsp;&nbsp;&nbsp; Calgary, AB, Canada
+              &nbsp;&nbsp;&nbsp; Canada
             </p>
             <p className="contactDetails text-start">
               <img src={Email} alt="email-icon" className="contactDetailsImg" />
               &nbsp;&nbsp;&nbsp;
               <a className="email" href="mailto:codedashsign@gmail.com">
-                codedashsign@gmail.com
+                axiomdevelopers@gmail.com
               </a>
             </p>
             <br />
@@ -126,7 +126,7 @@ const Contact = () => {
                   id="toField"
                   name="toField"
                   className="inputField"
-                  value="codedashsign@gmail.com"
+                  value="axiomdevelopers@gmail.com"
                 />
               </div>
               <br />
